@@ -1,0 +1,32 @@
+.wid {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: bisque;
+}
+.wid .off {
+    float: right;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+}
+.wid h1 {
+    margin-top: 1.5em;
+    font-size: 32px;
+}
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+figure {
+    float: right;
+    margin: 10px 10px 10px 10px;    
+}
+.cols a:hover {
+    color:red;
+}
+.off img {
+    width: 50px;
+    border-radius: 10%;
+}
