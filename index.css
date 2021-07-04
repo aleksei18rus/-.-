@@ -1,4 +1,7 @@
 .body {
+    background-image: url(img/back.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -25,12 +28,12 @@
     font-family: Nunito-Bold;
 }
 
-.sams img {
+.sams img, .nout img {
     padding: 20px;
     float: left;
 }
 
-.sams p {
+.sams p, .nout p {
     padding: 20px;
     font-family: Nunito-Bold;
 }
