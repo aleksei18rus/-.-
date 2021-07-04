@@ -1,20 +1,41 @@
 .body {
-    background-image: url(img/back.jpg);
-    background-size: cover;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
-
-.remont {
-    color:cornsilk;
-    font-family:'Courier New', Courier, monospace;
-    opacity: 0.8;
-    padding: 5px;
-    text-align: center;
+.header, .tel{
     width: 100%;
-    margin-top: 5px;
+    background-color: cadetblue;
+    text-align: center;
+    padding: 5px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
+
 .tel {
-    margin-top: 10px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.tel img {
+    margin-right: 160px;
+    margin-bottom: -15px;
+}
+
+.tel a {
+    color: #000;
+    text-decoration: none
+}
+
+.tel a h4 {
+    padding: 5px;
+    margin-top: -25px;
+}
+
+.sams img {
+    padding: 20px;
+    float: left;
+}
+
+.sams p {
+    padding: 20px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
