@@ -2,7 +2,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.header, .tel{
+.header {
     width: 100%;
     background-color: cadetblue;
     text-align: center;
@@ -11,12 +11,14 @@
 }
 
 .tel {
-    text-align: right;
+    text-align: center;
     padding-right: 20px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-color: cadetblue;
 }
 
 .tel img {
-    margin-right: 160px;
+    margin-right: 210px;
     margin-bottom: -15px;
 }
 
