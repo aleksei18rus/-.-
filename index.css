@@ -7,30 +7,21 @@
     background-color: cadetblue;
     text-align: center;
     padding: 5px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .tel {
     text-align: center;
     padding-right: 20px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family:'Courier New', Courier, monospace;
     background-color: cadetblue;
 }
 
 .tel img {
-    margin-right: 210px;
-    margin-bottom: -15px;
+    position: absolute;
+
 }
 
-.tel a {
-    color: #000;
-    text-decoration: none
-}
-
-.tel a h4 {
-    padding: 5px;
-    margin-top: -25px;
-}
 
 .sams img {
     padding: 20px;
@@ -39,5 +30,5 @@
 
 .sams p {
     padding: 20px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family:'Courier New', Courier, monospace;
 }
