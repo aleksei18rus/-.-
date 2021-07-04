@@ -2,18 +2,23 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@font-face {
+    font-family: Nunito-Bold;
+    src: url(fonts/Nunito/Nunito-Bold.ttf);
+   }
 .header {
     width: 100%;
     background-color: cadetblue;
     text-align: center;
     padding: 5px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: Nunito-Bold;
 }
 
 .tel {
     text-align: center;
     padding-right: 20px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: Nunito-Bold;
     background-color: cadetblue;
 }
 
@@ -30,5 +35,5 @@
 
 .sams p {
     padding: 20px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: Nunito-Bold;
 }
