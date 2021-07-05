@@ -18,7 +18,7 @@
     font-family: Nunito-Bold;
 }
 
-.card-body {
+.card-body, .bottoms {
     font-family: Nunito-Bold;
 }
 
@@ -30,10 +30,27 @@
     padding: 20px; 
 }
 
-.card-title {
+.card-title, .bottoms {
     text-align: center;
 }
 
 .welc {
     font-size: 50px;
+}
+
+.bottoms {
+    margin-bottom: 5px;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none; color:black;
+}
+
+a:hover {
+    text-decoration: none; color:red;
+}
+
+.card {
+    padding: 5px;
 }
