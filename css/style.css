@@ -1,0 +1,39 @@
+.body {
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+    font-family: Nunito-Bold;
+    src: url(../fonts/Nunito/Nunito-LightItalic.ttf);
+}
+
+.header {
+    background-color: cadetblue;
+    padding: 5px;
+    font-family: Nunito-Bold;
+}
+
+.card-body {
+    font-family: Nunito-Bold;
+}
+
+.rowcenter {
+    font-family: Nunito-Bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 20px; 
+}
+
+.card-title {
+    text-align: center;
+}
+
+.welc {
+    font-size: 50px;
+}
