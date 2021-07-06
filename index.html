@@ -31,30 +31,25 @@
         <div class="header">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">глазовхелп.рф</a>
+                    <a class="navbar-brand" href="https://глазовхелп.рф" target="_blank">глазовхелп.рф</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item">
+                            <!--li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#contact">Контакты</a>
-                            </li>
+                            </li-->
                             <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Прайс
+                            Каталог
                             </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Телевизоры</a></li>
-                                <li><a class="dropdown-item" href="#">Ноутбуки</a></li>
-                                <li><a class="dropdown-item" href="#">Телефоны</a></li>
+                                <li><a class="dropdown-item" href="#tv_1">Телевизоры</a></li>
+                                <li><a class="dropdown-item" href="#notebook_1">Ноутбуки</a></li>
+                                <li><a class="dropdown-item" href="#fon_1">Телефоны</a></li>
+                                <li><a class="dropdown-item" href="#instrument_1">Инструменты</a></li>
                                 </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="https://vk.com/notebookglazov" target="_blank">Вконтакте <img src="img/vk.png" alt="vk" width="25px"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="tel:89120107884">Позвонить <img src="img/tel.png" alt="vk" width="25px"></a>
                             </li>
                         </ul>
                     </div>
@@ -72,14 +67,17 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="card" style="width: 100%;">
-                        <img src="img/sams.jpg" class="card-img-top" alt="телевизор">
+                        <img src="img/sams.jpg" class="card-img-top" alt="телевизор" id="tv_1">
                         <div class="card-body">   
                             <p>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#tv" aria-expanded="false" aria-controls="tv">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#tv" 
+                                aria-expanded="false" aria-controls="tv">
                                     <h5 class="card-title">Телевизоры</h5>
                                 </button>
+                                <a href="tel:89120107884"> <img src="img/tel.png" alt="vk" width="60px"></a>
+                                <a href="https://vk.com/notebookglazov" target="_blank"><img src="img/vk.png" alt="vk" width="46px"></a>
                             </p>
                               <div class="collapse" id="tv">
                                 <div class="card card-body">
@@ -95,15 +93,17 @@
                         </div>
                     </div>
                 </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card" style="width: 100%;">
-                            <img src="img/nout.jpg" class="card-img-top" alt="ноутбук">
+                            <img src="img/nout.jpg" class="card-img-top" alt="ноутбук" id="notebook_1">
                             <div class="card-body">
                                 <p>
                                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#notebook"
                                      aria-expanded="false" aria-controls="notebook" style="background-color: brown; border-color: brown;">
                                         <h5 class="card-title">Ноутбуки</h5>
                                     </button>
+                                    <a href="tel:89120107884"> <img src="img/tel.png" alt="vk" width="60px"></a>
+                                    <a href="https://vk.com/notebookglazov" target="_blank"><img src="img/vk.png" alt="vk" width="46px"></a>
                                 </p>
                                   <div class="collapse" id="notebook">
                                     <div class="card card-body">
@@ -120,22 +120,46 @@
                                         </p>
                                     </div>
                                   </div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="card" style="width: 100%;">
-                            <img src="img/tele.jpg" class="card-img-top" alt="телефоны">
+                            <img src="img/tele.jpg" class="card-img-top" alt="телефоны" id="fone_1">
                             <div class="card-body">
                                 <p>
                                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#fone" 
                                     aria-expanded="false" aria-controls="fone" style="background-color: green; border-color: green;">
                                         <h5 class="card-title">Телефоны</h5>
                                     </button>
+                                    <a href="tel:89120107884"> <img src="img/tel.png" alt="vk" width="60px"></a>
+                                    <a href="https://vk.com/notebookglazov" target="_blank"><img src="img/vk.png" alt="vk" width="46px"></a>
                                 </p>
                                   <div class="collapse" id="fone">
                                     <div class="card card-body">
                                         <p class="card-text"><strong style="color: red;">Ремонт на модульном уровне</strong><br>
+                                            Замена экранов, корпусов и АКБ</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 100%;">
+                            <img src="img/instrument.jpg" class="card-img-top" alt="инструменты" id="instrument_1">
+                            <div class="card-body">
+                                <p>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#instrument" 
+                                    aria-expanded="false" aria-controls="fone" style="background-color: red; border-color: red;">
+                                        <h5 class="card-title">Инструменты</h5>
+                                    </button>
+                                    <a href="tel:89127682339"> <img src="img/tel.png" alt="vk" width="60px"></a>
+                                    <a href="https://vk.com/vseinstrumenti18" target="_blank"><img src="img/vk.png" alt="vk" width="46px"></a>
+                                </p>
+                                  <div class="collapse" id="instrument">
+                                    <div class="card card-body">
+                                        <p class="card-text">Ремонт электро и бензоинструмента</strong><br>
                                             Замена экранов, корпусов и АКБ</p>
                                     </div>
                                   </div>
@@ -153,7 +177,7 @@
                         Адрес: ул. Ленина, д. 21к5, Глазов, республика Удмуртия, 427622
                     </div>
                     <div class="col-md-2">
-                        <a href="tel:89120107884">8-912-010-78-84</a>
+                        <a href="..."></a>
                     </div>
             </div>    
         </div>
