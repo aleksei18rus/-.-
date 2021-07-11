@@ -53,6 +53,7 @@ a:hover {
 .card {
     border: outset 5px;
 .   padding: 10px;
+.   margin-bottom: 10px;
 }
 
 .carusels {
@@ -63,5 +64,4 @@ a:hover {
 
 . catalog {
 .   margin: 5%;
-.   padding: 10px;
 }
