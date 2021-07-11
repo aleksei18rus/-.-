@@ -1,5 +1,5 @@
 .body {
-    background-image: url(../img/back.jpg);
+    background-image: url(../img/welcome.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin-left: auto;
@@ -19,13 +19,14 @@
 
 .card-body, .bottoms {
     font-family: Nunito-Bold;
+    text-align: center;
 }
 
 .rowcenter {
     font-family: Nunito-Bold;
     margin-bottom: 10px;
     text-align: center;
-    padding: 200px; 
+    padding: 30px;
 }
 
 .card-title, .bottoms {
@@ -50,6 +51,15 @@ a:hover {
 }
 
 .card {
-    padding: 5px;
-    margin-bottom: 10px;
+    border: outset 5px;
+    margin: 10px;
+}
+
+.carusels {
+    border: 5px outset;
+    border-color: #fff;
+    border-radius: 5px;
+}
+.catalog {
+    margin: 100px;
 }
