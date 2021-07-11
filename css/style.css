@@ -52,15 +52,10 @@ a:hover {
 
 .card {
     border: outset 5px;
- 
-
 }
 
 .carusels {
     border: 5px outset;
     border-color: #fff;
     border-radius: 5px;
-}
-.catalog {
-    margin: 1%
 }
