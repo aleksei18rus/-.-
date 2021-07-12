@@ -52,8 +52,8 @@ a:hover {
 
 .card {
     border: outset 5px;
-.   padding: 10px;
-.   margin-bottom: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .carusels {
@@ -62,6 +62,6 @@ a:hover {
     border-radius: 5px;
 }
 
-. catalog {
-.   margin: 5%;
+.catalog {
+    margin: 5%;
 }
