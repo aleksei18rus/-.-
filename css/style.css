@@ -20,6 +20,10 @@
 .card-body, .bottoms {
     font-family: Nunito-Bold;
     text-align: center;
+
+}
+.card-body img {
+    margin-top: 15px;
 }
 
 .rowcenter {
@@ -51,7 +55,6 @@ a:hover {
 }
 
 .card {
-    border: outset 5px;
     padding: 10px;
     margin-bottom: 20px;
 }
