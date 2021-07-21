@@ -4,6 +4,7 @@
     background-attachment: fixed;
     margin-left: auto;
     margin-right: auto;
+    height: 1000px;
 }
 
 @font-face {
@@ -37,8 +38,21 @@
     text-align: center;
 }
 
+.card-title, .acs_instr {
+    transition: 1s;
+}
+
+.card-title:hover  {
+    transform: scale(1.05);
+}
+
+.acs_instr:hover {
+    transform: scale(2);
+}
+
 .welc {
     font-size: 50px;
+    margin-top: 100px;
 }
 
 .bottoms {
