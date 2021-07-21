@@ -1,4 +1,6 @@
 .body {
+    min-width: 320;
+    height: auto;
     background-image: url(../img/welcome.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -8,27 +10,34 @@
 }
 
 @font-face {
-    font-family: Nunito-Bold;
-    src: url(../fonts/Nunito/Nunito-LightItalic.ttf);
+    /*font-family: Nunito-Bold;
+    src: url(../fonts/Nunito/Nunito-LightItalic.ttf);*/
+    font-family: Oswald-Regular;
+    src: url(../fonts/Oswald-Regular.ttf);
 }
 
 .header {
     padding: 5px;
-    font-family: Nunito-Bold;
+    font-family: Oswald-Regular;
     width: 100%;
 }
 
+.logo {
+    margin: 0 10px 0 10px;
+}
+
 .card-body, .bottoms {
-    font-family: Nunito-Bold;
+    font-family: Oswald-Regular;
     text-align: center;
 
 }
+
 .card-body img {
     margin-top: 15px;
 }
 
 .rowcenter {
-    font-family: Nunito-Bold;
+    font-family: Oswald-Regular;
     margin-bottom: 10px;
     text-align: center;
     padding: 3px;
@@ -73,12 +82,13 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.carusels {
-    border: 5px outset;
-    border-color: #fff;
-    border-radius: 5px;
-}
-
 .catalog {
     margin: 5%;
+}
+
+.map {
+    font-family: Oswald-Regular;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -30px;
 }
