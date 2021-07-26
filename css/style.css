@@ -1,7 +1,8 @@
 .body {
     min-width: 320;
     height: auto;
-    background-image: url(../img/welcome.jpg);
+    background-color: rgb(214, 208, 198);
+    /*background-image: url(../img/welcome.jpg);*/
     background-size: cover;
     background-attachment: fixed;
     margin-left: auto;
@@ -16,6 +17,18 @@
     src: url(../fonts/Oswald-Regular.ttf);
 }
 
+@media screen and (min-width: 800px) {
+    .rowcenter {
+        position:absolute;
+        margin-right: 450px;
+    }
+}
+
+@media (max-width: 800px) {
+    .cpu img {
+        display: none;
+    }
+  }
 .header {
     padding: 5px;
     font-family: Oswald-Regular;
@@ -29,7 +42,6 @@
 .card-body, .bottoms {
     font-family: Oswald-Regular;
     text-align: center;
-
 }
 
 .card-body img {
@@ -38,9 +50,10 @@
 
 .rowcenter {
     font-family: Oswald-Regular;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     text-align: center;
     padding: 3px;
+    text-shadow: 5px 5px 5px rgb(129, 129, 136);
 }
 
 .card-title, .bottoms {
@@ -69,8 +82,8 @@
     padding: 20px;
 }
 
-a {
-    text-decoration: none; color:black;
+a, p {
+    text-decoration: none; color:white;
 }
 
 a:hover {
@@ -80,8 +93,16 @@ a:hover {
 .card {
     padding: 10px;
     margin-bottom: 20px;
+    box-shadow: 5px 5px 5px rgb(77, 77, 85);
 }
 
+.card-body p {
+    color: black;
+}
+
+.card-body a {
+    text-decoration: none; color: red;
+}
 .catalog {
     margin: 5%;
 }
@@ -92,3 +113,4 @@ a:hover {
     font-size: 30px;
     margin-top: -30px;
 }
+
