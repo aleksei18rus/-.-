@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
     <title>ГлазовХелп</title>
 </head>
     <!-- Yandex.Metrika counter -->
@@ -30,7 +31,7 @@
     <!-- /Yandex.Metrika counter -->
     <body class="body">
         <div class="up">
-            <div class="header" style="background-color: rgb(33, 37, 41);" id="home">
+            <div class="header" style="background-color: rgb(33, 37, 41);">
                 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(33, 37, 41);">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="https://glazovhelp.ru"> <img src="img/logo.png" alt="logo" width="30px" class="logo"> ГлазовХелп</a>
@@ -38,13 +39,13 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav" >
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#contact">Контакты</a>
+                                    <a class="nav-link active" aria-current="page" href="#contact"> <i class="fas fa-address-card" style="font-size: 20px;"></i> Контакты</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Каталог
+                                    <i class="fas fa-list-alt" style="font-size: 20px;"></i> Каталог
                                 </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <li><a class="dropdown-item" href="#tv_1">Телевизоры</a></li>
@@ -80,22 +81,20 @@
                             <div class="card-body">   
                                 <p>
                                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#tv" 
-                                    aria-expanded="false" aria-controls="tv" style="border-radius: 10px;">
+                                    aria-expanded="false" aria-controls="tv" style="border-radius: 10px; width: 100%;">
                                         <h5 class="card-title">Телевизоры</h5>
                                     </button><br>
-                                    <a href="tel:89120107884"> <img src="img/tel.png" alt="tel" width="50px"></a>
-                                    <a href="https://vk.com/notebookglazov" target="_blank"><img src="img/vk.png" alt="vk" width="50px"></a>
                                 </p>
-                                  <div class="collapse" id="tv">
-                                    <div class="card card-body">
-                                        <p class="card-text"> 
-                                            - Производим ремонт на модульном уровне, и на компонентном.<br>
-                                            - Замена плат питания (PSU), материнских плат (MAIN).<br>
-                                            - Замена светодиодов или же полность светодиодных планок.<br>
-                                            - Ремонт цепей питания, прошивка NAND, EMMC, SPI и eeprom памяти.<br> 
-                                            - Есть возможность заменить матрицу вашего телевизора.<br>
-                                        </p>
-                                    </div>
+                                  <div class="collapse" id="tv">                                    
+                                    <p class="card-text"> 
+                                        - Производим ремонт на модульном уровне, и на компонентном.<br>
+                                        - Замена плат питания (PSU), материнских плат (MAIN).<br>
+                                        - Замена светодиодов или же полность светодиодных планок.<br>
+                                        - Ремонт цепей питания, прошивка NAND, EMMC, SPI и eeprom памяти.<br> 
+                                        - Есть возможность заменить матрицу вашего телевизора.<br>
+                                    </p>  
+                                    <a href="tel:89120107884"> <img src="img/tel.png" alt="tel" width="50px"></a>
+                                    <a href="https://vk.com/notebookglazov" target="_blank"><img src="img/vk.png" alt="vk" width="50px"></a>                                  
                                   </div>
                                 </div>
                         </div>
@@ -106,28 +105,25 @@
                                 <div class="card-body">
                                     <p>
                                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#notebook"
-                                         aria-expanded="false" aria-controls="notebook" style="border-radius: 10px;">
+                                         aria-expanded="false" aria-controls="notebook" style="border-radius: 10px; width: 100%;">
                                             <h5 class="card-title">Ноутбуки</h5>
                                         </button><br>
-                                        <a href="tel:89120107884"> <img src="img/tel.png" alt="vk" width="50px"></a>
-                                        <a href="https://vk.com/notebookglazov" target="_blank"><img src="img/vk.png" alt="vk" width="50px"></a>
                                     </p>
                                       <div class="collapse" id="notebook">
-                                        <div class="card card-body">
-                                            <p class="card-text"> 
-                                                - Ремонт материнской платы ноутбуков любой сложности.<br>
-                                                - Замена БГА чипов.<br>
-                                                - Замена Видеочипов ,Северного и Южного моста.<br>
-                                                - Ремонт залитого или механически поврежденного ноутбука.<br>
-                                                - Замена матрицы, клавиатуры, аккумулятора.<br>  
-                                                - Перепрошивка ,замена микросхем BIOS.<br> 
-                                                - Ремонт материнской платы на компонентном уровне.<br>
-                                                - Восстановление Первичных и Вторичных источников питания.<br>
-                                                - Чистка (профилактика) системы охлаждения.<br>
-                                            </p>
-                                        </div>
-                                      </div>
-                                    
+                                        <p class="card-text"> 
+                                            - Ремонт материнской платы ноутбуков любой сложности.<br>
+                                            - Замена БГА чипов.<br>
+                                            - Замена Видеочипов ,Северного и Южного моста.<br>
+                                            - Ремонт залитого или механически поврежденного ноутбука.<br>
+                                            - Замена матрицы, клавиатуры, аккумулятора.<br>  
+                                            - Прошивка микросхем BIOS.<br> 
+                                            - Ремонт материнской платы на компонентном уровне.<br>
+                                            - Восстановление Первичных и Вторичных источников питания.<br>
+                                            - Чистка (профилактика) системы охлаждения.<br>
+                                        </p>
+                                        <a href="tel:89120107884"> <img src="img/tel.png" alt="vk" width="50px"></a>
+                                        <a href="https://vk.com/notebookglazov" target="_blank"><img src="img/vk.png" alt="vk" width="50px"></a>
+                                      </div>     
                                 </div>
                             </div>
                         </div>
@@ -137,17 +133,15 @@
                                 <div class="card-body">
                                     <p>
                                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#fone" 
-                                        aria-expanded="false" aria-controls="fone" style="border-radius: 10px;">
+                                        aria-expanded="false" aria-controls="fone" style="border-radius: 10px; width: 100%;">
                                             <h5 class="card-title">Телефоны</h5>
                                         </button><br>
-                                        <a href="tel:89120107884"> <img src="img/tel.png" alt="vk" width="50px"></a>
-                                        <a href="https://vk.com/notebookglazov" target="_blank"><img src="img/vk.png" alt="vk" width="50px"></a>
                                     </p>
                                       <div class="collapse" id="fone">
-                                        <div class="card card-body">
-                                            <p class="card-text"><strong style="color: red;">Ремонт на модульном уровне</strong><br>
-                                                Замена экранов, корпусов, АКБ</p>
-                                        </div>
+                                        <p class="card-text"><strong style="color: red;">Ремонт на модульном уровне</strong><br>
+                                            Замена экранов, корпусов, АКБ</p>
+                                            <a href="tel:89120107884"> <img src="img/tel.png" alt="vk" width="50px"></a>
+                                            <a href="https://vk.com/notebookglazov" target="_blank"><img src="img/vk.png" alt="vk" width="50px"></a>
                                       </div>
                                 </div>
                             </div>
@@ -158,20 +152,18 @@
                                 <div class="card-body">
                                     <p>
                                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#instrument" 
-                                        aria-expanded="false" aria-controls="fone" style="border-radius: 10px;">
+                                        aria-expanded="false" aria-controls="fone" style="border-radius: 10px; width: 100%;">
                                             <h5 class="card-title" title="Развернуть">Инструменты</h5>
-                                        </button><br>
-                                        <a href="tel:89127661435"> <img src="img/tel.png" alt="vk" width="50px" title="Позвонить"></a>
-                                        <a href="https://vk.com/vseinstrumenti18" target="_blank"><img src="img/vk.png" alt="vk" width="50px" title="Вконтакте"></a>
+                                        </button><br>    
                                     </p>
                                       <div class="collapse" id="instrument">
-                                        <div class="card card-body">
-                                            <p class="card-text">Магазин <a href="https://www.vseinstrumenti.ru/" target="_blank">ВсеИнструменты.ру</a> осуществляет продажу 
-                                                и ремонт электро- и бензоинструмента.<br>
-                                                Авторизованный сервисный центр следующих брендов.<br>
-                                                <a href="img/acs_instr.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере"> 
-                                                    <img src="img/acs_instr.jpg" width="100%" class="acs_instr"></a></p>
-                                        </div>
+                                        <p class="card-text">Магазин <a href="https://www.vseinstrumenti.ru/" target="_blank">ВсеИнструменты.ру</a> осуществляет продажу 
+                                            и ремонт электро- и бензоинструмента.<br>
+                                            Авторизованный сервисный центр следующих брендов.<br>
+                                            <a href="img/acs_instr.jpg" class="ulightbox" target="_blank" title="Нажмите, для просмотра в полном размере"> 
+                                            <img src="img/acs_instr.jpg" width="100%" class="acs_instr"></a></p>
+                                            <a href="tel:89127661435"> <img src="img/tel.png" alt="vk" width="50px" title="Позвонить"></a>
+                                            <a href="https://vk.com/vseinstrumenti18" target="_blank"><img src="img/vk.png" alt="vk" width="50px" title="Вконтакте"></a>
                                       </div>
                                 </div>
                             </div>
@@ -217,7 +209,7 @@
                             <p>© 2021 GLAZOVHELP.RU</p>
                         </div>
                         <div class="col-md-8">
-                            <p>Размещение информации на сайте: <a href="mailto:aleksei18rus@gmail.com">aleksei18rus@gmail.com</a></p>
+                            <p>Размещение информации на сайте: <i class="fas fa-envelope" style="font-size: 20px;"></i> <a href="mailto:aleksei18rus@gmail.com">aleksei18rus@gmail.com</a></p>
                         </div>
                 </div>    
             </div>
