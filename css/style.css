@@ -11,10 +11,17 @@
 }
 
 @font-face {
-    /*font-family: Nunito-Bold;
-    src: url(../fonts/Nunito/Nunito-LightItalic.ttf);*/
-    font-family: Oswald-Regular;
-    src: url(../fonts/Oswald-Regular.ttf);
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
 
 @media screen and (min-width: 800px) {
@@ -31,7 +38,7 @@
   }
 .header {
     padding: 5px;
-    font-family: Oswald-Regular;
+    font-family: Roboto-Light;
     width: 100%;
 }
 
@@ -40,16 +47,25 @@
 }
 
 .card-body, .bottoms {
-    font-family: Oswald-Regular;
+    font-family: Roboto-Regular;
     text-align: center;
 }
 
 .card-body img {
-    margin-top: 15px;
+    margin-top: 15px;  
+}
+
+.card img {
+    display: inline-block;
+    overflow: hidden;
+    transition: 1s;
+}
+.card img:hover {
+    transform: scale(1.05);
 }
 
 .rowcenter {
-    font-family: Oswald-Regular;
+    font-family: Roboto-Medium;
     margin-bottom: 50px;
     text-align: center;
     padding: 3px;
@@ -60,12 +76,8 @@
     text-align: center;
 }
 
-.card-title, .acs_instr {
+.acs_instr {
     transition: 1s;
-}
-
-.card-title:hover  {
-    transform: scale(1.05);
 }
 
 .acs_instr:hover {
@@ -87,7 +99,7 @@ a, p {
 }
 
 a:hover {
-    text-decoration: none; color:red;
+    text-decoration: none; color:blueviolet;
 }
 
 .card {
@@ -103,8 +115,14 @@ a:hover {
 .card-body a {
     text-decoration: none; color: red;
 }
+
 .catalog {
     margin: 5%;
+}
+
+.container_bottoms {
+    text-decoration: none; color: white;
+    font-family: Roboto-Light;
 }
 
 /*.map {
