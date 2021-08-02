@@ -1,8 +1,8 @@
 .body {
     min-width: 320;
     height: auto;
-    background-color: rgb(214, 208, 198);
-    /*background-image: url(../img/welcome.jpg);*/
+    /*background-color: rgb(214, 208, 198);*/
+    background-image: url(../img/welcome.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin-left: auto;
@@ -125,10 +125,9 @@ a:hover {
     font-family: Roboto-Light;
 }
 
-/*.map {
-    font-family: Oswald-Regular;
+.map {
+    font-family: Roboto-Light;
     text-align: center;
     font-size: 30px;
-    margin-top: -30px;
-}*/
-
+    margin: 1%;
+}
