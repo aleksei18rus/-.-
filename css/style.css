@@ -125,9 +125,9 @@ a:hover {
     font-family: Roboto-Light;
 }
 
-.map, .comments {
+.map, .comments{
     font-family: Roboto-Light;
     text-align: center;
     font-size: 30px;
-    padding: 5px;
+    padding: 20px;
 }
