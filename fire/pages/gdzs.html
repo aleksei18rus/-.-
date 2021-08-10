@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../css/style_gdzs.css">
+    <script src="../js/gdzs.js"></script>
+    <title>ГДЗС</title>
+</head>
+<body onload="gdzs()">
+    <a href="../lndex.html">К распорядку</a>
+    <h1>Калькулятор</h1>
+        <div>
+            <input type="checkbox" class="ochag" id="ochag" style="margin-top: 10px; margin-left: 20px;">
+            <label for="ochag">Очаг не найден.</label><br>
+            <div id="ochag_1"></div>
+            <input type="checkbox" class="usloviya" id="ochag" style="margin-top: 10px; margin-left: 20px;">
+            <label for="usloviya">Сложные условия.</label><br>
+            <div id="usloviya"></div>
+            <input type="number" class="p_min_on" size="50" placeholder="Pmin.вкл." style="margin-left: 20px; margin-top: 20px;"> 
+            <div id="temp" style="margin-top: 10px; margin-left: 20px;"></div><br>
+            <div id="p_max_pad" style="margin-top: 10px; margin-left: 20px;"></div>
+            <div id="delta_t" style="margin-top: 10px; margin-left: 20px;"></div>
+            <input type="number" class="p_min_och" size="50" placeholder="Pmin.очаг." style="margin-left: 20px; margin-top: 10px;"><br>
+            <div id="rab" style="margin-top: 10px; margin-left: 20px;"></div><br>
+            <button class="b-1" style="margin-left: 20px; margin-top: 10px;">Расчитать</button>
+        </div>
+</body>
+</html>
