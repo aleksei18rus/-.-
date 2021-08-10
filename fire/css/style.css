@@ -8,10 +8,10 @@
     src: url(../fonts/Roboto/Roboto-Bold.ttf);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 567px) {
     #timer {
         font-size: 30px;
-        text-align: center;
+        display: none;
     }
 
 }
