@@ -14,6 +14,7 @@
     }
     #previous, #next {
         font-size: 10px;
+        text-align: center;
         }
     #current {
         font-size: 25px;
