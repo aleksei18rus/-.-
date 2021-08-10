@@ -7,43 +7,49 @@
     font-family: Roboto-Bold;
     src: url(../fonts/Roboto/Roboto-Bold.ttf);
 }
-
-@media screen and (min-width: 567px) {
+@media screen and (min-width: 567px) { 
     #timer {
-        font-size: 50px;
+        font-size: 150px;
+        text-align: center;
+        font-family: Roboto-Bold;
+    }
+    #previous, #next {
+        font-size: 30px;
+        text-align: center;
+        font-family: Roboto-Light;
+    }
+    #current {
+        font-size: 60px;
+        text-align: center;
+        font-family: Roboto-Light;
     }
 
 }
-.rasporyadok{
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 567px) { 
+    #timer {
+        font-size: 75px;
+        text-align: center;
+        font-family: Roboto-Bold;
+    }
+    #previous, #next {
+        font-size: 15px;
+        text-align: center;
+    }
+    #current {
+        font-size: 30px;
+        text-align: center;
+    }
 }
-#timer {
-    font-size: 110px;
-    text-align: center;
-    font-family: Roboto-Bold;
-    margin-top: 10px;
+body {
+    min-width: 320px;
+    font-family: Roboto-Light;
 }
 #previous {
-    text-align: center;
-    font-family: Roboto-Light;
-    font-size: 20px;
     color: green;
 }
-
-#current {
-    text-align: center;
-    font-family: Roboto-Light;
-    font-size: 50px;
-}
 #next {
-    text-align: center;
-    font-family: Roboto-Light;
-    font-size: 20px;
     color: red;
 }
 .navbar {
-    font-family: Roboto-Bold;
+    font-family: Roboto-Light;
 }
