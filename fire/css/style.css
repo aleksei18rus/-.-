@@ -15,7 +15,9 @@
     }
 
 }
-
+.row {
+    display: inline-flex;
+}
 #timer {
     font-size: 100px;
     text-align: center;
@@ -23,25 +25,21 @@
     margin-top: 10px;
 }
 #previous {
-    font-size: 30px;
     text-align: center;
     font-family: Roboto-Light;
-    margin-top: 10px;
+    font-size: 20px;
     color: green;
 }
 
 #current {
-    font-size: 90px;
     text-align: center;
     font-family: Roboto-Light;
-    margin-top: 10px;
-    line-height: 80px;
+    font-size: 50px;
 }
 #next {
-    font-size: 30px;
     text-align: center;
     font-family: Roboto-Light;
-    margin-top: 35px;
+    font-size: 20px;
     color: red;
 }
 .navbar {
