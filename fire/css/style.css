@@ -11,6 +11,7 @@
 @media screen and (min-width: 800px) {
     #timer {
         font-size: 70px;
+        text-align: center;
     }
     #previous, #next {
         font-size: 10px;
