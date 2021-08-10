@@ -10,8 +10,7 @@
 
 @media screen and (max-width: 567px) {
     #timer {
-        font-size: 30px;
-        display: none;
+        font-size: 50px;
     }
 
 }
