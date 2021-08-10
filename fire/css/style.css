@@ -8,7 +8,7 @@
     src: url(../fonts/Roboto/Roboto-Bold.ttf);
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 800px) {
     #timer {
         font-size: 70px;
     }
