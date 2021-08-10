@@ -8,14 +8,17 @@
     src: url(../fonts/Roboto/Roboto-Bold.ttf);
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (min-width: 567px) {
     #timer {
         font-size: 50px;
     }
 
 }
-.row {
-    display: inline-flex;
+.rasporyadok{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #timer {
     font-size: 110px;
