@@ -7,51 +7,53 @@
     font-family: Roboto-Bold;
     src: url(../fonts/Roboto/Roboto-Bold.ttf);
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 567px) { 
     #timer {
-        font-size: 70px;
+        font-size: 150px;
+        text-align: center;
+        font-family: Roboto-Bold;
     }
     #previous, #next {
-        font-size: 10px;
-        }
+        font-size: 30px;
+        text-align: center;
+        font-family: Roboto-Light;
+    }
     #current {
-        font-size: 25px;
+        font-size: 60px;
+        text-align: center;
+        font-family: Roboto-Light;
+    }
+
+}
+@media screen and (max-width: 567px) { 
+    #timer {
+        font-size: 75px;
+        text-align: center;
+        font-family: Roboto-Bold;
+    }
+    #previous, #next {
+        font-size: 15px;
+        text-align: center;
+    }
+    #current {
+        font-size: 30px;
         text-align: center;
     }
 }
-
-#timer {
-    font-size: 150px;
-    text-align: center;
-    font-family: Roboto-Bold;
-    margin-top: 10px;
+body {
+    min-width: 320px;
+    font-family: Roboto-Light;
 }
 #previous {
-    font-size: 30px;
-    text-align: center;
-    font-family: Roboto-Light;
-    margin-top: 10px;
     color: green;
 }
-
-#current {
-    font-size: 90px;
-    text-align: center;
-    font-family: Roboto-Light;
-    margin-top: 10px;
-    line-height: 80px;
-}
 #next {
-    font-size: 30px;
-    text-align: center;
-    font-family: Roboto-Light;
-    margin-top: 35px;
     color: red;
 }
 .navbar {
-    font-family: Roboto-Bold;
+    font-family: Roboto-Light;
 }
 .tab {
     border: 1px solid;
+    font-family: Roboto-Light;
 }
