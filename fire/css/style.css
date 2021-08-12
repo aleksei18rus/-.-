@@ -52,3 +52,6 @@
 .navbar {
     font-family: Roboto-Bold;
 }
+.tab {
+    border: 1px solid;
+}
