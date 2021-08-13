@@ -15,20 +15,21 @@
     <div class="row">
       <div class="col-md-4 col-xl-3"></div>
         <form name="clockform">
-          <p>Время:<br>
-          <input name="clocks" size="12" maxlength="12" value="00:00.00"> 
-          <input name="label" size="12" maxlength="40" value="00:00.00"><br>
+          <p style="margin-top: 30px;"><h1>СЕКУНДОМЕР</h1></p>
+          <input name="clock" size="12" maxlength="12" value="00:00.00" class="window">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;
+          <input name="label" size="12" maxlength="40" value="00:00.00" class="window"><br>
           <input name="starter" type="button" value="Старт/Стоп" onclick="findTIME()" class="btn_secund rounded-circle btn btn-outline-success"> 
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input name="clearer" type="button" value="Сбросить всё" onclick="clearALL()" class="btn_secund rounded-circle btn btn-outline-primary">
-          </p>
         </form>
       </div>
     </div>
 
   </div>
   
-    <!--table border="1">
+    <table>
     <p>Результаты нормативов</p>
      <tr>
          <th style="width: 100px;">Группа</th>
@@ -42,6 +43,6 @@
      <tr><th>4<br>(41-45 лет)</th><th><p id="marker_4"></p></th><th></th></tr>
      <tr><th>5<br>(46-50 лет)</th><th><p id="marker_5"></p></th><th></th></tr>
      <tr><th>6<br>(51 и более)</th><th><p id="marker_6"></p></th><th></th></tr>
-   </table-->
+   </table>
  </body>
 </html>

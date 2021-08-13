@@ -6,7 +6,7 @@ var clocktimer;
 function clearFields() {
     init = 0;
     clearTimeout(clocktimer);
-    //document.clockform.clocks.value='00:00:00.00';
+    //document.clockform.clock.value='00:00:00.00';
     //document.clockform.label.value='00:00:00.00';
 }
 
@@ -36,7 +36,7 @@ function startTIME() {
     if (s<10) s='0'+s;
     if (ms<10) ms='0'+ms;
     if (init==1) document.clockform.label.value =  m + ':' + s + '.' + ms;
-    document.clockform.clocks.value = m+s+ms;
+    document.clockform.clock.value = m+s+ms.toString().replace(/\B(?=(\d{2})+(?!\d))/g, ".");
     clocktimer = setTimeout("startTIME()",10);
 }
 
@@ -47,13 +47,14 @@ function findTIME() {
     init=1;
  } 
  else {
-    var set_0 = (document.clockform.clocks.value*1.1).toFixed(0);
-    var set_1 = (document.clockform.clocks.value*1).toFixed(0);
-    var set_2 = (document.clockform.clocks.value*1.1).toFixed(0);
-    var set_3 = (document.clockform.clocks.value*1.3).toFixed(0);
-    var set_4 = (document.clockform.clocks.value*1.4).toFixed(0);
-    var set_5 = (document.clockform.clocks.value*1.5).toFixed(0);
-    var set_6 = (document.clockform.clocks.value*1.8).toFixed(0);
+    
+    var set_0 = (document.clockform.clock.value*1.1).toFixed(0);
+    var set_1 = (document.clockform.clock.value*1).toFixed(0);
+    var set_2 = (document.clockform.clock.value*1.1).toFixed(0);
+    var set_3 = (document.clockform.clock.value*1.3).toFixed(0);
+    var set_4 = (document.clockform.clock.value*1.4).toFixed(0);
+    var set_5 = (document.clockform.clock.value*1.5).toFixed(0);
+    var set_6 = (document.clockform.clock.value*1.8).toFixed(0);
     document.getElementById('marker_0').innerHTML = set_0.toString().replace(/\B(?=(\d{2})+(?!\d))/g, ".");
     document.getElementById('marker_1').innerHTML = set_1.toString().replace(/\B(?=(\d{2})+(?!\d))/g, ".");
     document.getElementById('marker_2').innerHTML = set_2.toString().replace(/\B(?=(\d{2})+(?!\d))/g, ".");
