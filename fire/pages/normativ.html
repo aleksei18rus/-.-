@@ -11,15 +11,23 @@
   <title>Нормативы</title>
  </head>
  <body onload="clockform()">
-    <form name="clockform">
-        <p>Время:<br>
-        <input name="clocks" size="12" maxlength="12" value="00:00.00"> 
-        <input name="label" size="12" maxlength="40" value="00:00.00"><br>
-        <input name="starter" type="button" value="Старт/Стоп" onclick="findTIME()" class="btn_secund rounded-circle btn btn-outline-success"> 
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <input name="clearer" type="button" value="Сбросить всё" onclick="clearALL()" class="btn_secund rounded-circle btn btn-outline-primary">
-        </p>
-       </form>  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 col-xl-3"></div>
+        <form name="clockform">
+          <p>Время:<br>
+          <input name="clocks" size="12" maxlength="12" value="00:00.00"> 
+          <input name="label" size="12" maxlength="40" value="00:00.00"><br>
+          <input name="starter" type="button" value="Старт/Стоп" onclick="findTIME()" class="btn_secund rounded-circle btn btn-outline-success"> 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input name="clearer" type="button" value="Сбросить всё" onclick="clearALL()" class="btn_secund rounded-circle btn btn-outline-primary">
+          </p>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  
     <!--table border="1">
     <p>Результаты нормативов</p>
      <tr>
