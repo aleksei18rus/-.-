@@ -12,6 +12,8 @@ function clearFields() {
 
 function clearALL() {
     clearFields();
+    document.clockform.label.value='00:00:00.00';
+    document.clockform.clock.value='00:00:00.00'
     document.getElementById('marker_0').innerHTML = '';
     document.getElementById('marker_1').innerHTML = '';
     document.getElementById('marker_2').innerHTML = '';
