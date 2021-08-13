@@ -12,8 +12,8 @@ function clearFields() {
 
 function clearALL() {
     clearFields();
-    document.clockform.label.value='00:00:00.00';
-    document.clockform.clock.value='00:00:00.00'
+    document.clockform.label.value='00:00.00';
+    document.clockform.clock.value='000000'
     document.getElementById('marker_0').innerHTML = '';
     document.getElementById('marker_1').innerHTML = '';
     document.getElementById('marker_2').innerHTML = '';
@@ -37,8 +37,10 @@ function startTIME() {
     if (m<10) m='0'+m;
     if (s<10) s='0'+s;
     if (ms<10) ms='0'+ms;
-    if (init==1) document.clockform.label.value =  m + ':' + s + '.' + ms;
-    document.clockform.clock.value = m+s+ms.toString().replace(/\B(?=(\d{2})+(?!\d))/g, ".");
+    if (init==1) {
+    document.clockform.label.value =  m + ':' + s + '.' + ms;
+    document.clockform.clock.value = m+s+ms;
+    }
     clocktimer = setTimeout("startTIME()",10);
 }
 
