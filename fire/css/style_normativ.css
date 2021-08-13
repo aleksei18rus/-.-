@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Roboto-Light;
+    src: url(/fonts/Roboto/Roboto-Light.ttf);
+}
+body {
+    min-width: 320;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Roboto-Light;
+}
+.btn_secund {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}

@@ -35,7 +35,7 @@ function startTIME() {
     if (m<10) m='0'+m;
     if (s<10) s='0'+s;
     if (ms<10) ms='0'+ms;
-    if (init==1) document.clockform.label.value = h + ':' + m + ':' + s + '.' + ms;
+    if (init==1) document.clockform.label.value =  m + ':' + s + '.' + ms;
     document.clockform.clocks.value = m+s+ms;
     clocktimer = setTimeout("startTIME()",10);
 }
