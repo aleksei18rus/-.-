@@ -37,10 +37,11 @@
                       ФИЗО
                       </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#1010">Челночный бег</a></li>
-                              <li><a class="dropdown-item" href="#shturmovka">Штурмовая лестница</a></li>
-                              <li><a class="dropdown-item" href="#stometrov">100 метровая полоса</a></li>
-                              <li><a class="dropdown-item" href="#podtyagivanie">Подтягивание</a></li>
+                              <li><a class="dropdown-item" href="#1010">Челночный бег 10Х10 м.</a></li>
+                              <li><a class="dropdown-item" href="#shturmovka">Штурмовая лестница.</a></li>
+                              <li><a class="dropdown-item" href="#stometrov">100 метровая полоса.</a></li>
+                              <li><a class="dropdown-item" href="#podtyagivanie">Подтягивание.</a></li>
+                              <li><a class="dropdown-item" href="#podtyagivanie">Наклон туловища вперед (пресс).</a></li>
                               <!--li><a class="dropdown-item" href="#instrument_1">Инструменты</a></li-->
                           </ul>
                       </li>
@@ -72,7 +73,7 @@
     <div class="row">
       <div class="col-md-4 col-xl-3"></div>
       <div class="vozrast">
-        <table class="table table-bordered table-secondary">
+        <table class="table table-bordered table-light">
           <tr>
               <th style="width: 100px;">Возрастная группа</th>
               <th style="width: 100px;">Мужчины</th>
@@ -88,14 +89,14 @@
         </table>
       </div>
         <form name="clockform">
-          <input name="clock" size="12" maxlength="12" value="000000" class="window"-->
-          <input name="label" size="12" maxlength="40" value="00:00.00" class="window"><br> 
+          <input name="clock" size="20" maxlength="12" value="000000" style="opacity: 0;"><br>
+          <input name="label" size="8" maxlength="40" value="00:00.00" class="window" style="height: 180px; font-size: 150px;"><br> 
           <input name="clearer" type="button" value="Сбросить всё" onclick="clearALL()" class="btn_secund rounded-circle btn btn-outline-danger">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input name="starter" type="button" value="Старт/Стоп" onclick="findTIME()" class="btn_secund rounded-circle btn btn-outline-success"> 
         </form>
         <div class="resultats">
-          <table class="table table-bordered table-secondary">
+          <table class="table table-bordered table-light">
             <tr>
                 <th style="width: 50%;" colspan="2">Группа</th>
                 <th style="width: 50%;">ПСП</th>
@@ -110,11 +111,11 @@
           </table>
         </div>
         <div id="1010">
-          <table class="table table-bordered table-secondary">
+          <table class="table table-bordered table-light">
             <tr>
-                <th style="width: 100px;" rowspan="5">Челночный бег 10X10 м. (сек.)</th>
+                <th style="width: 150px;" rowspan="5">Челночный бег 10X10 м. (сек.)</th>
                 <th style="width: 100px;" rowspan="2">Оценка</th>
-                <th style="width: 100px;" colspan="7">Возрастные группы (мужчины)</th>
+                <th colspan="7">Возрастные группы (мужчины)</th>
             </tr>
             <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
             <tr style="color: orangered;"><th>Удовлетворительно</th><th>26</th><th>27</th><th>28</th><th>31</th><th>34</th><th>36</th><th>39</th></tr>
@@ -123,11 +124,11 @@
           </table>
         </div>
         <div id="shturmovka">
-          <table class="table table-bordered table-secondary">
+          <table class="table table-bordered table-light">
             <tr>
-                <th style="width: 100px;" rowspan="5">Подъем поштурмовой лестнице </br> (4 эт.) (сек.)</th>
+                <th style="width: 150px;" rowspan="5">Подъем поштурмовой лестнице </br> (4 эт.) (сек.)</th>
                 <th style="width: 100px;" rowspan="2">Оценка</th>
-                <th style="width: 100px;" colspan="7">Возрастные группы (мужчины)</th>
+                <th colspan="7">Возрастные группы (мужчины)</th>
             </tr>
             <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
             <tr style="color: orangered;"><th>Удовлетворительно</th><th>28</th><th>34</th><th>36</th><th>38</th><th>41</th><th>44</th><th>56</th></tr>
@@ -136,11 +137,11 @@
           </table>
         </div>
         <div id="stometrov">
-          <table class="table table-bordered table-secondary">
+          <table class="table table-bordered table-light">
             <tr>
-                <th style="width: 100px;" rowspan="5">Преодаление 100 метровой полосы с препятствиями (сек.)</th>
+                <th style="width: 150px;" rowspan="5">Преодаление 100 метровой полосы с препятствиями (сек.)</th>
                 <th style="width: 100px;" rowspan="2">Оценка</th>
-                <th style="width: 100px;" colspan="7">Возрастные группы (мужчины)</th>
+                <th colspan="7">Возрастные группы (мужчины)</th>
             </tr>
             <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
             <tr style="color: orangered;"><th>Удовлетворительно</th><th>30</th><th>33</th><th>36</th><th>40</th><th>43</th><th>50</th><th>60</th></tr>
@@ -149,16 +150,29 @@
           </table>
         </div>
         <div id="podtyagivanie">
-          <table class="table table-bordered table-secondary">
+          <table class="table table-bordered table-light">
             <tr>
-                <th style="width: 100px;" rowspan="5">Подтягивание (кол-во раз)</th>
+                <th style="width: 150px;" rowspan="5">Подтягивание (кол-во раз)</th>
                 <th style="width: 100px;" rowspan="2">Оценка</th>
-                <th style="width: 100px;" colspan="7">Возрастные группы (мужчины)</th>
+                <th colspan="7">Возрастные группы (мужчины)</th>
             </tr>
             <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
             <tr style="color: orangered;"><th>Удовлетворительно</th><th>12</th><th>10</th><th>9</th><th>6</th><th>4</th><th>3</th><th>2</th></tr>
             <tr style="color: orange;"><th>Хорошо</th><th>14</th><th>12</th><th>11</th><th>8</th><th>6</th><th>5</th><th>3</th></tr>
             <tr style="color: green;"><th>Отлично</th><th>16</th><th>14</th><th>13</th><th>10</th><th>8</th><th>7</th><th>5</th></tr>
+          </table>
+        </div>
+        <div id="pres">
+          <table class="table table-bordered table-light">
+            <tr>
+                <th style="width: 150px;" rowspan="5">Наклон туловища вперед (кол-во раз в мин.)</th>
+                <th style="width: 100px;" rowspan="2">Оценка</th>
+                <th colspan="7">Возрастные группы (мужчины)</th>
+            </tr>
+            <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+            <tr style="color: orangered;"><th>Удовлетворительно</th><th>50</th><th>45</th><th>40</th><th>35</th><th>30</th><th>25</th><th>20</th></tr>
+            <tr style="color: orange;"><th>Хорошо</th><th>55</th><th>50</th><th>45</th><th>40</th><th>35</th><th>30</th><th>25</th></tr>
+            <tr style="color: green;"><th>Отлично</th><th>60</th><th>55</th><th>50</th><th>45</th><th>40</th><th>35</th><th>30</th></tr>
           </table>
         </div>
       </div>
