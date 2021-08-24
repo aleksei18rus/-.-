@@ -13,17 +13,41 @@
     <title>Распорядок</title>
 </head>
 <body onload="startTime()" style="background: burlywood;">
+  <div class="header" style="background-color: rgb(33, 37, 41);">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(33, 37, 41);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://glazovhelp.ru/fire/lndex.html"> <img src="/fire/img/logo.png" alt="logo" width="50px" class="logo"> FireHelp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" >
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Разделы
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="pages/gdzs.html">ГДЗС</a></li>
+                            <li><a class="dropdown-item" href="/fire/pages/404.html">Тактика</a></li>
+                            <li><a class="dropdown-item" href="/fire/pages/404.html">Охрана труда</a></li>
+                            <li><a class="dropdown-item" href="pages/normativ.html">Секундомер</a></li>
+                            <!--li><a class="dropdown-item" href="#instrument_1">Инструменты</a></li-->
+                        </ul>
+                    </li>
+                    <!--li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#vk_comments">Отзывы</a>
+                    </li-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </div>   
         <div id="timer"></div>
         <div id="previous"></div> 
         <div id="current"></div>
         <div id="next"></div>
-    <nav class="navbar fixed-bottom navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="pages/gdzs.html">ГДЗС</a>
-          <a class="navbar-brand" href="pages/normativ.html">Секундомер</a>
-          <a class="navbar-brand" href="../index.html">ГлазовХелп</a>
-          <a class="navbar-brand" href="/fire/pages/404.html">ТАКТИКА</a>
-        </div>
-      </nav>
 </body>
 </html>

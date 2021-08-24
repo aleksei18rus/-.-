@@ -11,6 +11,39 @@
   <title>Нормативы</title>
  </head>
  <body onload="clockform()">
+  <div class="header" style="background-color: rgb(33, 37, 41);">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(33, 37, 41);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://glazovhelp.ru/fire/lndex.html"> <img src="/fire/img/logo.png" alt="logo" width="40px" class="logo"> FireHelp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" >
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Разделы
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="pages/gdzs.html">ГДЗС</a></li>
+                            <li><a class="dropdown-item" href="/fire/pages/404.html">Тактика</a></li>
+                            <li><a class="dropdown-item" href="/fire/pages/404.html">Охрана труда</a></li>
+                            <li><a class="dropdown-item" href="pages/normativ.html">Секундомер</a></li>
+                            <!--li><a class="dropdown-item" href="#instrument_1">Инструменты</a></li-->
+                        </ul>
+                    </li>
+                    <!--li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#vk_comments">Отзывы</a>
+                    </li-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="secundomer">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-4 col-xl-3"></div>
@@ -21,19 +54,63 @@
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input name="clearer" type="button" value="Сбросить всё" onclick="clearALL()" class="btn_secund rounded-circle btn btn-outline-danger">
         </form>
-        <table class="table table-bordered table-secondary">
-          <tr>
-              <th style="width: 100px;">Группа</th>
-              <th style="width: 100px;">ПСП</th>
-          </tr>
-          <tr><th>1-й<br> год</th><th><p id="marker_0"></p></tr>
-          <tr><th>1<br>(до 30 лет)</th><th><p id="marker_1"></p></tr>
-          <tr><th>2<br>(31-35 лет)</th><th><p id="marker_2"></p></tr>
-          <tr><th>3<br>(36-40 лет)</th><th><p id="marker_3"></p></tr>
-          <tr><th>4<br>(41-45 лет)</th><th><p id="marker_4"></p></tr>
-          <tr><th>5<br>(46-50 лет)</th><th><p id="marker_5"></p></tr>
-          <tr><th>6<br>(51 и более)</th><th><p id="marker_6"></p></tr>
-        </table>
+        <div class="resultats">
+          <table class="table table-bordered table-secondary">
+            <tr>
+                <th style="width: 100px;">Группа</th>
+                <th style="width: 100px;">ПСП</th>
+            </tr>
+            <tr><th>1-й<br> год</th><th><p id="marker_0"></p></th></tr>
+            <tr><th>1<br>(до 30 лет)</th><th><p id="marker_1"></p></th></tr>
+            <tr><th>2<br>(31-35 лет)</th><th><p id="marker_2"></p></th></tr>
+            <tr><th>3<br>(36-40 лет)</th><th><p id="marker_3"></p></th></tr>
+            <tr><th>4<br>(41-45 лет)</th><th><p id="marker_4"></p></th></tr>
+            <tr><th>5<br>(46-50 лет)</th><th><p id="marker_5"></p></th></tr>
+            <tr><th>6<br>(51 и более)</th><th><p id="marker_6"></p></th></tr>
+          </table>
+        </div>
+        <div class="vozrast">
+          <table class="table table-bordered table-secondary">
+            <tr>
+                <th style="width: 100px;">Возрастная группа</th>
+                <th style="width: 100px;">Мужчины</th>
+                <th style="width: 100px;">Женщиный</th>
+            </tr>
+            <tr><th>1</th><th>до 25 лет</th><th>до 25 лет</th></tr>
+            <tr><th>2</th><th>от 25 до 30 лет</th><th>от 25 до 30 лет</th></tr>
+            <tr><th>3</th><th>от 30 до 35 лет</th><th>от 30 до 35 лет</th></tr>
+            <tr><th>4</th><th>от 35 до 40 лет</th><th>от 35 до 40 лет</th></tr>
+            <tr><th>5</th><th>от 40 до 45 лет</th><th>от 40 до 45 лет</th></tr>
+            <tr><th>6</th><th>от 45 до 50 лет</th><th>от 45 лет и старше</th></tr>
+            <tr><th>7</th><th>от 50 лет и старше</th><th></th></tr>
+          </table>
+        </div>
+        <div class="vozrast">
+          <table class="table table-bordered table-secondary">
+            <tr>
+                <th style="width: 100px;" rowspan="5">Челночный бег 10X10 м. (сек.)</th>
+                <th style="width: 100px;" rowspan="2">Оценка</th>
+                <th style="width: 100px;" colspan="7">Возрастные группы (мужчины)</th>
+            </tr>
+            <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+            <tr style="color: orangered;"><th>Удовлетворительно</th><th>26</th><th>27</th><th>28</th><th>31</th><th>34</th><th>36</th><th>39</th></tr>
+            <tr style="color: orange;"><th>Хорошо</th><th>25</th><th>26</th><th>27</th><th>30</th><th>33</th><th>35</th><th>38</th></tr>
+            <tr style="color: green;"><th>Отлично</th><th>24</th><th>25</th><th>26</th><th>29</th><th>32</th><th>34</th><th>37</th></tr>
+          </table>
+        </div>
+        <div class="shturmovka">
+          <table class="table table-bordered table-secondary">
+            <tr>
+                <th style="width: 100px;" rowspan="5">Подъем поштурмовой лестнице </br> (4 эт.) (сек.)</th>
+                <th style="width: 100px;" rowspan="2">Оценка</th>
+                <th style="width: 100px;" colspan="7">Возрастные группы (мужчины)</th>
+            </tr>
+            <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+            <tr style="color: orangered;"><th>Удовлетворительно</th><th>28</th><th>34</th><th>36</th><th>38</th><th>41</th><th>44</th><th>56</th></tr>
+            <tr style="color: orange;"><th>Хорошо</th><th>26</th><th>28</th><th>31</th><th>35</th><th>39</th><th>41</th><th>52</th></tr>
+            <tr style="color: green;"><th>Отлично</th><th>24</th><th>26</th><th>28</th><th>32</th><th>36</th><th>39</th><th>47</th></tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>

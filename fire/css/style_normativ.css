@@ -7,16 +7,27 @@
     src: url(../fonts/digital-7\ \(italic\).ttf);
 }
 body {
+    background-image: url(../img/psp.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Roboto-Light;
+}
+.secundomer {
+    text-align: center;
     min-width: 320;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(../img/psp.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
+}
+.resultats {
+    min-width: 320;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
     font-family: Roboto-Light;
-    font-size: 30px;
+    width: 100%;
 }
 .btn_secund {
     width: 350px;

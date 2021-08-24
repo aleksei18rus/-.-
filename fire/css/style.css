@@ -50,8 +50,10 @@ body {
 #next {
     color: red;
 }
-.navbar {
+.header {
+    padding: 5px;
     font-family: Roboto-Light;
+    width: 100%;
 }
 .tab {
     border: 1px solid;
