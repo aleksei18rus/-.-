@@ -27,7 +27,7 @@ h1 {
     margin-left: 20px;
     width: 120px;
 }
-.p_min_on, .p_min_och, .time_on, .time_och {
+.p_min_on, .p_min_och, .time_on, .time_och, #Hour {
     margin-left: 20px; 
     margin-top: 20px;
 }

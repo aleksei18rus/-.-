@@ -50,15 +50,13 @@ function gdzs() {
                         document.getElementById('p_min_on').textContent = p_min_on;
                         var t_total_rab = ((p_min_on-10)*6.8)/(kof_szh* 40); //расчет общего времени работы
                         document.getElementById('temp').textContent = Math.floor(t_total_rab); // общее время работы 
-                        document.getElementById('time_ozhid').textContent = time_on + t_total_rab;
+                        document.getElementById('time_ozhid').textContent = time_on; 
 
 
                         var p_max_pad = (p_min_on-10)/2.5;
                         document.getElementById('p_max_pad').textContent = Math.ceil(p_max_pad); //Р максимальное падения
                         var delta_t = (p_max_pad*6.8)/(kof_szh* 40);
                         document.getElementById('delta_t').textContent = Math.floor(delta_t); // Дельта Т
-                        var time_on = document.querySelector('.time_on').value;
-                        document.getElementById('time_on').textContent = time_on;
 
 
 
