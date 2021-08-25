@@ -48,19 +48,88 @@
         </div>   
     </div>
     <!--a href="../lndex.html">К распорядку</a-->
-    <h1>Калькулятор</h1>
+    <h1>Калькулятор ГДЗС</h1>
         <input type="checkbox" class="ochag" id="ochag" style="margin-top: 10px; margin-left: 20px;">
-        <label for="ochag">Очаг не найден.</label><br>
-        <div id="ochag_1"></div>
-        <input type="checkbox" class="usloviya" id="ochag" style="margin-top: 10px; margin-left: 20px;">
-        <label for="usloviya">Сложные условия.</label><br>
-        <div id="usloviya"></div>
-        <input type="number" class="p_min_on" size="50" placeholder="Pmin.вкл." style="margin-left: 20px; margin-top: 20px;"> 
-        <div id="temp" style="margin-top: 10px; margin-left: 20px;"></div><br>
-        <div id="p_max_pad" style="margin-top: 10px; margin-left: 20px;"></div>
-        <div id="delta_t" style="margin-top: 10px; margin-left: 20px;"></div>
-        <input type="number" class="p_min_och" size="50" placeholder="Pmin.очаг." style="margin-left: 20px; margin-top: 10px;"><br>
-        <div id="rab" style="margin-top: 10px; margin-left: 20px;"></div><br>
-        <button class="b-1" style="margin-left: 20px; margin-top: 10px;">Расчитать</button>
+            <label for="ochag">Очаг не найден.</label>
+                <div id="ochag"></div>
+        <input type="checkbox" class="usloviya" id="usloviya" style="margin-top: 10px; margin-left: 20px;">
+            <label for="usloviya">Сложные условия.</label>
+                <div id="usloviya"></div>
+        <input type="number" class="p_min_on" size="50" placeholder="Pmin.вкл.">
+        <button class="b-1 btn btn-primary">Расчитать</button></br>
+        <input type="number" class="p_min_och" size="50" placeholder="Pmin.очаг.">
+        <button class="b-2 btn btn-primary">Очистить</button></br>
+        <div class="tablica">
+            <table class="table table-bordered table-light" style="text-align: left;">
+                <tr>
+                    <th style="width: 70%;">Дата включения в СИЗОД.</th>
+                    <th id=""></th>
+                </tr>
+                <tr>
+                    <th>Наименование подразделения </br>(Ф.И.О. постового на ПБ).</th>
+                    <th><i style="opacity: 0.7;">СПСЧ-1</br> Возмищев И.А.</i></th>
+                </tr>
+                <tr>
+                    <th>Состав звена Ф.И.О. </br> и тип СИЗОД.</th>
+                    <th><i style="opacity: 0.7;">Иванов И.И.</br> Петров В.В.</br> Сидоров С.С.</br> АП-"ОМЕГА"</i></th>
+                </tr>
+                <tr>
+                    <th>Место (объект включения).</th>
+                    <th><i style="opacity: 0.7;">ул. Ленина 45</i></th>
+                </tr>
+                <tr>
+                    <th>Время включения, час. мин.</th>
+                    <th id=""></th>
+                </tr>
+                <tr>
+                    <th>Давление при входе в НДС, атм.</th>
+                    <th id="p_min_on"></th>
+                </tr>
+                <tr>
+                    <th>Давление по прибытию к месту</br> выполнения задания (очаг), атм.</th>
+                    <th id="p_min_och"></th>
+                </tr>
+                <tr>
+                    <th>Затрачено на путь к месту</br> выполнения задания, атм.</th>
+                    <th id="p_zatrata"></th>   
+                </tr>
+                <tr>
+                    <th>Роспись командира звена.</th>
+                    <th id=""></th>   
+                </tr>
+                <tr>
+                    <th>Контрольное давление при котором </br>звену необходимо возвращаться </br>на свежий воздух, атм.</th>
+                    <th id="p_kon_out"></th>   
+                </tr>
+                <tr>
+                    <th>Время проведения на месте</br> выполнения задания, мин.</th>
+                    <th id="rab"></th>
+                </tr>
+                <tr>
+                    <th>Общее время пребывания в НДС, мин.</th>
+                    <th id="temp"></th>   
+                </tr>
+                <tr>
+                    <th>Ожидаемое время возвращения, час. мин.</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Время подачи команды постовым </br>на возвращение звена ГДЗС, мин.</th>
+                    <th id="delta_t"></th>
+                </tr>
+                <tr>
+                    <th>Фактическое время возвращения на ПБ,</br> час. мин.</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Фактическое давление в баллоне </br>время возвращения на ПБ, атм.</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Время подачи команды постовым </br>на возвращение звена ГДЗС, мин.</th>
+                    <th id="p_max_pad" style="display: none;"></th>
+                </tr>
+            </table>
+        </div>
 </body>
 </html>
