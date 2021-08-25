@@ -13,7 +13,7 @@ var timOut = String(h)+ String(m);
 if ((timOut >=800) && (timOut < 830)) {
     document.getElementById('previous').textContent = "Подготовка к смене караулов.";
     document.getElementById('current').textContent = "Смена караулов.";
-    document.getElementById('next').textContent = "Подготовка к занятиям, информационно правовой час.";
+    document.getElementById('next').textContent = "Подготовка к занятиям, информационно - правовой час.";
 }
 if ((timOut >=830) && (timOut < 900)) {
     document.getElementById('previous').textContent = "Смена караулов.";

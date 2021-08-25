@@ -41,7 +41,12 @@
                               <li><a class="dropdown-item" href="#shturmovka">Штурмовая лестница.</a></li>
                               <li><a class="dropdown-item" href="#stometrov">100 метровая полоса.</a></li>
                               <li><a class="dropdown-item" href="#podtyagivanie">Подтягивание.</a></li>
-                              <li><a class="dropdown-item" href="#podtyagivanie">Наклон туловища вперед (пресс).</a></li>
+                              <li><a class="dropdown-item" href="#pres">Наклон туловища вперед (пресс).</a></li>
+                              <li><a class="dropdown-item" href="#cku">Силовое комплексное упражнение (СКУ).</a></li>
+                              <li><a class="dropdown-item" href="#one_km">Бег 1 км..</a></li>
+                              <li><a class="dropdown-item" href="#five_km">Бег (кросс) на 5 км.</a></li>
+                              <li><a class="dropdown-item" href="#plavanie">Плавание на 100 м. вольным стилем.</a></li>
+                              <li><a class="dropdown-item" href="luzhi">Лыжная гонка 5 км.</a></li>
                               <!--li><a class="dropdown-item" href="#instrument_1">Инструменты</a></li-->
                           </ul>
                       </li>
@@ -91,7 +96,7 @@
         <form name="clockform">
           <input name="clock" size="20" maxlength="12" value="000000" style="opacity: 0;"><br>
           <input name="label" size="8" maxlength="40" value="00:00.00" class="window" style="height: 180px; font-size: 150px;"><br> 
-          <input name="clearer" type="button" value="Сбросить всё" onclick="clearALL()" class="btn_secund rounded-circle btn btn-outline-danger">
+          <input name="clearer" type="button" value="Сброс" onclick="clearALL()" class="btn_secund rounded-circle btn btn-outline-danger">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input name="starter" type="button" value="Старт/Стоп" onclick="findTIME()" class="btn_secund rounded-circle btn btn-outline-success"> 
         </form>
@@ -175,7 +180,85 @@
             <tr style="color: green;"><th>Отлично</th><th>60</th><th>55</th><th>50</th><th>45</th><th>40</th><th>35</th><th>30</th></tr>
           </table>
         </div>
-      </div>
+        <div id="otzhimanie">
+          <table class="table table-bordered table-light">
+            <tr>
+                <th style="width: 150px;" rowspan="5">Сгибание и разгибание рук в упоре лёжа</br> (кол-во раз.)</th>
+                <th style="width: 100px;" rowspan="2">Оценка</th>
+                <th colspan="7">Возрастные группы (мужчины)</th>
+            </tr>
+            <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+            <tr style="color: orangered;"><th>Удовлетворительно</th><th>50</th><th>45</th><th>40</th><th>35</th><th>30</th><th>25</th><th>20</th></tr>
+            <tr style="color: orange;"><th>Хорошо</th><th>55</th><th>50</th><th>45</th><th>40</th><th>35</th><th>30</th><th>25</th></tr>
+            <tr style="color: green;"><th>Отлично</th><th>60</th><th>55</th><th>50</th><th>45</th><th>40</th><th>35</th><th>30</th></tr>
+          </table>
+        </div>
+        <div id="cku">
+          <table class="table table-bordered table-light">
+            <tr>
+                <th style="width: 150px;" rowspan="5">Силовое комплексное упражнение</br> (кол-во повторений.)</th>
+                <th style="width: 100px;" rowspan="2">Оценка</th>
+                <th colspan="7">Возрастные группы (мужчины)</th>
+            </tr>
+            <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+            <tr style="color: orangered;"><th>Удовлетворительно</th><th>3</th><th>2</th><th>1</th><th>1</th><th>1</th><th>1</th><th>1</th></tr>
+            <tr style="color: orange;"><th>Хорошо</th><th>4</th><th>3</th><th>2</th><th>2</th><th>2</th><th>2</th><th>2</th></tr>
+            <tr style="color: green;"><th>Отлично</th><th>5</th><th>4</th><th>3</th><th>3</th><th>3</th><th>3</th><th>3</th></tr>
+          </table>
+        </div>
+        <div id="one_km">
+          <table class="table table-bordered table-light">
+            <tr>
+                <th style="width: 150px;" rowspan="5">Бег на 1км.</br> (мин. сек.)</th>
+                <th style="width: 100px;" rowspan="2">Оценка</th>
+                <th colspan="7">Возрастные группы (мужчины)</th>
+            </tr>
+            <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+            <tr style="color: orangered;"><th>Удовлетворительно</th><th>3.40</th><th>3.50</th><th>4.10</th><th>4.30</th><th>4.40</th><th>5.40</th><th>5.50</th></tr>
+            <tr style="color: orange;"><th>Хорошо</th><th>3.25</th><th>3.35</th><th>3.45</th><th>3.50</th><th>4.00</th><th>5.00</th><th>5.30</th></tr>
+            <tr style="color: green;"><th>Отлично</th><th>3.10</th><th>3.20</th><th>3.30</th><th>3.40</th><th>3.50</th><th>4.00</th><th>5.00</th></tr>
+          </table>
+        </div>
+        <div id="five_km">
+          <table class="table table-bordered table-light">
+            <tr>
+                <th style="width: 150px;" rowspan="5">Бег (кросс) на 5км.</br> (мин. сек.)</th>
+                <th style="width: 100px;" rowspan="2">Оценка</th>
+                <th colspan="7">Возрастные группы (мужчины)</th>
+            </tr>
+            <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+            <tr style="color: orangered;"><th>Удовлетворительно</th><th>24.00</th><th>25.00</th><th>26.00</th><th>31.00</th><th>33.00</th><th>37.00</th><th>40.00</th></tr>
+            <tr style="color: orange;"><th>Хорошо</th><th>23.00</th><th>24.00</th><th>25.00</th><th>29.00</th><th>31.00</th><th>35.00</th><th>38.00</th></tr>
+            <tr style="color: green;"><th>Отлично</th><th>22.00</th><th>23.00</th><th>24.00</th><th>27.00</th><th>29.00</th><th>33.00</th><th>36.00</th></tr>
+          </table>
+        </div>
+        <div id="plavanie">
+          <table class="table table-bordered table-light">
+            <tr>
+                <th style="width: 150px;" rowspan="5">Плавание на 100 м. вольным стилем.</br> (мин. сек.)</th>
+                <th style="width: 100px;" rowspan="2">Оценка</th>
+                <th colspan="7">Возрастные группы (мужчины)</th>
+            </tr>
+            <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+            <tr style="color: orangered;"><th>Удовлетворительно</th><th>2.05</th><th>2.30</th><th>2.35</th><th>2.55</th><th>3.10</th><th>3.55</th><th>4.10</th></tr>
+            <tr style="color: orange;"><th>Хорошо</th><th>1.45</th><th>2.00</th><th>2.05</th><th>2.25</th><th>2.40</th><th>3.05</th><th>3.20</th></tr>
+            <tr style="color: green;"><th>Отлично</th><th>1.30</th><th>1.45</th><th>1.50</th><th>2.05</th><th>2.25</th><th>2.40</th><th>3.00</th></tr>
+          </table>
+        </div>
+        <div id="luzhi">
+          <table class="table table-bordered table-light">
+            <tr>
+                <th style="width: 150px;" rowspan="5">Лыжная гонка на 5км.</br> (мин. сек.)</th>
+                <th style="width: 100px;" rowspan="2">Оценка</th>
+                <th colspan="7">Возрастные группы (мужчины)</th>
+            </tr>
+            <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr>
+            <tr style="color: orangered;"><th>Удовлетворительно</th><th>24.00</th><th>26.30</th><th>27.30</th><th>31.30</th><th>33.30</th><th>36.30</th><th>39.30</th></tr>
+            <tr style="color: orange;"><th>Хорошо</th><th>23.00</th><th>25.30</th><th>26.30</th><th>28.30</th><th>30.30</th><th>33.30</th><th>36.30</th></tr>
+            <tr style="color: green;"><th>Отлично</th><th>22.00</th><th>24.30</th><th>25.30</th><th>26.30</th><th>28.30</th><th>30.30</th><th>33.30</th></tr>
+          </table>
+        </div>
+      </div><!--Закрывающий тег secundomer-->
     </div>
   </div>
  </body>

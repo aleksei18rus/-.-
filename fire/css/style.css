@@ -23,6 +23,11 @@
         text-align: center;
         font-family: Roboto-Light;
     }
+    #rasporyadok {
+        text-align: center;
+        margin: 150px auto 0 auto;
+        width: 50%;
+    }
 
 }
 @media screen and (max-width: 567px) { 
@@ -38,6 +43,11 @@
     #current {
         font-size: 30px;
         text-align: center;
+    }
+    #rasporyadok {
+        text-align: center;
+        margin: 150px auto 0 auto;
+        width: 90%;
     }
 }
 body {
