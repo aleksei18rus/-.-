@@ -50,20 +50,22 @@
     <!--a href="../lndex.html">К распорядку</a-->
     <h1>Калькулятор ГДЗС</h1>
         <input type="checkbox" class="ochag" id="ochag" style="margin-top: 10px; margin-left: 20px;">
-            <label for="ochag">Очаг не найден.</label>
+            <label for="ochag" ><b>Очаг не найден.</b></label>
                 <div id="ochag"></div>
         <input type="checkbox" class="usloviya" id="usloviya" style="margin-top: 10px; margin-left: 20px;">
-            <label for="usloviya">Сложные условия.</label>
+            <label for="usloviya"><b>Сложные условия.</b></label>
                 <div id="usloviya"></div>
+        <input type="time" class="time_on">   <b>Время включения</b></br>
+        <input type="time" class="time_och">   <b>Время у очага</b></br>
         <input type="number" class="p_min_on" size="50" placeholder="Pmin.вкл.">
-        <button class="b-1 btn btn-primary">Расчитать</button></br>
+        <button class="b-1 btn btn-primary"><b>Расчитать</b></button></br>
         <input type="number" class="p_min_och" size="50" placeholder="Pmin.очаг.">
-        <button class="b-2 btn btn-primary">Очистить</button></br>
+        <button class="b-2 btn btn-primary"><b>Очистить</b></button></br>
         <div class="tablica">
             <table class="table table-bordered table-light" style="text-align: left;">
                 <tr>
                     <th style="width: 70%;">Дата включения в СИЗОД.</th>
-                    <th id=""></th>
+                    <th><input type="date"></th>
                 </tr>
                 <tr>
                     <th>Наименование подразделения </br>(Ф.И.О. постового на ПБ).</th>
@@ -79,7 +81,7 @@
                 </tr>
                 <tr>
                     <th>Время включения, час. мин.</th>
-                    <th id=""></th>
+                    <th id="time_on"></th>
                 </tr>
                 <tr>
                     <th>Давление при входе в НДС, атм.</th>
@@ -111,7 +113,7 @@
                 </tr>
                 <tr>
                     <th>Ожидаемое время возвращения, час. мин.</th>
-                    <th></th>
+                    <th id="time_ozhid"></th>
                 </tr>
                 <tr>
                     <th>Время подачи команды постовым </br>на возвращение звена ГДЗС, мин.</th>
