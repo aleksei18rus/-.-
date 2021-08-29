@@ -9,8 +9,11 @@ function gdzs() {
                 kof_szh = 1;
             }
             function ob_time() {
-                var hour_on = document.querySelector('.hour_on').value;
-                var min_on = document.querySelector('.min_on').value;
+                var time_1 = document.querySelector('.time_1').value;
+                var time_1_on = time_1.split('');
+                console.log(time_1_on);
+                var hour_on = time_1_on[0]+time_1_on[1];
+                var min_on = time_1_on[3]+time_1_on[4];
                 document.getElementById('time_on').textContent = hour_on+":"+min_on;
                 var p_min_on = document.querySelector('.p_min_on').value;
                 document.getElementById('p_min_on').textContent = p_min_on;
@@ -34,9 +37,12 @@ function gdzs() {
                 document.getElementById('time_ozhid').textContent = time_on;
             }
             function fact() {
-                var hour_och = document.querySelector('.hour_out').value;
-                var min_och = document.querySelector('.min_out').value; 
-                document.getElementById('fact').textContent = hour_och+":"+min_och;
+                let time_3 = document.querySelector('.time_3').value;
+                let time_3_out = time_3.split('');
+                console.log(time_3_out);
+                let hour_out = time_3_out[0]+time_3_out[1];
+                let min_out = time_3_out[3]+time_3_out[4];
+                document.getElementById('fact').textContent = hour_out+":"+min_out;
             }
 //-------------------------------------------------------------------------------------------------------------------------------- 
                 if (document.querySelector('.usloviya').checked) {  //проверка условий, сложные
@@ -86,8 +92,11 @@ function gdzs() {
                         if (t_rab_och>0) {
                             document.getElementById('rab').textContent = Math.floor(t_rab_och); // время работы у очага
                         }
-                        var hour_och = document.querySelector('.hour_och').value;
-                        var min_och = document.querySelector('.min_och').value;
+                        var time_2 = document.querySelector('.time_2').value;
+                        var time_2_och = time_2.split('');
+                        console.log(time_2_och);
+                        var hour_och = time_2_och[0]+time_2_och[1];
+                        var min_och = time_2_och[3]+time_2_och[4];
                         var minutes_och = Number(min_och) + Number(Math.floor(t_rab_och));  
                         if (minutes_och>59) {
                             minutes_och = minutes_och-60;
@@ -153,8 +162,11 @@ function gdzs() {
                         if (t_rab_och>0) {
                             document.getElementById('rab').textContent = Math.floor(t_rab_och); // время работы у очага
                         } 
-                        var hour_och = document.querySelector('.hour_och').value;
-                        var min_och = document.querySelector('.min_och').value;
+                        var time_3 = document.querySelector('.time_2').value;
+                        var time_3_och = time_3.split('');
+                        console.log(time_3_och);
+                        var hour_och = time_3_och[0]+time_3_och[1];
+                        var min_och = time_3_och[3]+time_3_och[4];
                         var minutes_och = Number(min_och) + Number(Math.floor(t_rab_och));  
                         if (minutes_och>59) {
                             minutes_och = minutes_och-60;

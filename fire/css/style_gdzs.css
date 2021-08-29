@@ -28,9 +28,11 @@ h1 {
     width: 50%;
     
 }
-.p_min_on, .p_min_och, .time_on, .time_och, .hour_on, .min_on, .hour_out, .min_out, .hour_och, .min_och, .text{
+.time_1, .time_2, .time_3{
+    width: 150px;
     margin-left: 20px;
     margin-top: 20px;
+    
 }
 .formul {
     margin: 5px 0 0 0;
