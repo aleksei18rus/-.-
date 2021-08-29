@@ -36,27 +36,27 @@ function gdzs() {
 //-------------------------------------------------------------------------------------------------------------------------------- 
                 if (document.querySelector('.usloviya').checked) {  //проверка условий, сложные
                     if (document.querySelector('.ochag').checked) { //очаг не найден
+                        ob_time();
                         var hour_on = document.querySelector('.hour_on').value;
                         var min_on = document.querySelector('.min_on').value;
                         document.getElementById('time_on').textContent = hour_on+":"+min_on;
                         var p_min_on = document.querySelector('.p_min_on').value;
                         document.getElementById('p_min_on').textContent = p_min_on;
-                        ob_time();
                         var p_max_pad = (p_min_on-10)/3;
-                        document.getElementById('p_max_pad').textContent = Math.ceil(p_max_pad); //Р максимальное падения
+                        //document.getElementById('p_max_pad').textContent = Math.ceil(p_max_pad); //Р максимальное падения
                         var delta_t = (p_max_pad*6.8)/(kof_szh* 40);
                         document.getElementById('delta_t').textContent = Math.floor(delta_t); // Дельта Т
                         var minutes = Number(min_on) + Number(Math.floor(delta_t));  
                         if (minutes>59) {
                             minutes = minutes-60;
                                 if (minutes<10) {
-                                    minutes = "0"+minutes;
+                                    minutes = +"0"+minutes;
                                 }
                             hour_on ++;
                             if (hour_on>23) {
                                 hour_on = hour_on-24;
                                     if (hour_on<10) {
-                                        hour_on = "0"+hour_on;   
+                                        hour_on = +"0"+hour_on;   
                                     }
                             }    
                         }
@@ -86,13 +86,13 @@ function gdzs() {
                         if (minutes_och>59) {
                             minutes_och = minutes_och-60;
                                 if (minutes_och<10) {
-                                    minutes_och = "0"+minutes_och;
+                                    minutes_och = +"0"+minutes_och;
                                 }
                                 hour_och ++;
                             if (hour_och>23) {
                                 hour_och = hour_och-24;
                                     if (hour_och<10) {
-                                        hour_och = "0"+hour_och;   
+                                        hour_och = +"0"+hour_och;   
                                     }
                             }  
                         }
@@ -101,27 +101,27 @@ function gdzs() {
 //--------------------------------------------------------------------------------------------------------------------------------                    
                 } else {    // легкие условия
                     if (document.querySelector('.ochag').checked) { //очаг не найден
+                        ob_time();
                         var hour_on = document.querySelector('.hour_on').value;
                         var min_on = document.querySelector('.min_on').value;
                         document.getElementById('time_on').textContent = hour_on+":"+min_on;
                         var p_min_on = document.querySelector('.p_min_on').value;
                         document.getElementById('p_min_on').textContent = p_min_on;
-                        ob_time();
                         var p_max_pad = (p_min_on-10)/2.5;
-                        document.getElementById('p_max_pad').textContent = Math.ceil(p_max_pad); //Р максимальное падения
+                        //document.getElementById('p_max_pad').textContent = Math.ceil(p_max_pad); //Р максимальное падения
                         var delta_t = (p_max_pad*6.8)/(kof_szh* 40);
                         document.getElementById('delta_t').textContent = Math.floor(delta_t); // Дельта Т
                         var minutes = Number(min_on) + Number(Math.floor(delta_t));  
                         if (minutes>59) {
                             minutes = minutes-60;
                                 if (minutes<10) {
-                                    minutes = "0"+minutes;
+                                    minutes = +"0"+minutes;
                                 }
                             hour_on ++;
                             if (hour_on>23) {
                                 hour_on = hour_on-24;
                                     if (hour_on<10) {
-                                        hour_on = "0"+hour_on;   
+                                        hour_on = +"0"+hour_on;   
                                     }
                             }    
                         }
@@ -151,13 +151,13 @@ function gdzs() {
                         if (minutes_och>59) {
                             minutes_och = minutes_och-60;
                                 if (minutes_och<10) {
-                                    minutes_och = "0"+minutes_och;
+                                    minutes_och = +"0"+minutes_och;
                                 }
                                 hour_och ++;
                             if (hour_och>23) {
                                 hour_och = hour_och-24;
                                     if (hour_och<10) {
-                                        hour_och = "0"+hour_och;   
+                                        hour_och = +"0"+hour_och;   
                                     }
                             }  
                         }
