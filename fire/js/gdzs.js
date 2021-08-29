@@ -1,5 +1,5 @@
 function gdzs() {
-    document.querySelector('.b-1').addEventListener('click', ()=>{
+    document.querySelector('#b_1').addEventListener('click', ()=>{
         var p_min_on = document.querySelector('.p_min_on').value;
         document.getElementById('p_min_on').textContent = p_min_on;
         var kof_szh;
@@ -33,6 +33,11 @@ function gdzs() {
                 var time_on = hour_on+":"+minutes;
                 document.getElementById('time_ozhid').textContent = time_on;
             }
+            function fact() {
+                var hour_och = document.querySelector('.hour_out').value;
+                var min_och = document.querySelector('.min_out').value; 
+                document.getElementById('fact').textContent = hour_och+":"+min_och;
+            }
 //-------------------------------------------------------------------------------------------------------------------------------- 
                 if (document.querySelector('.usloviya').checked) {  //проверка условий, сложные
                     if (document.querySelector('.ochag').checked) { //очаг не найден
@@ -50,18 +55,19 @@ function gdzs() {
                         if (minutes>59) {
                             minutes = minutes-60;
                                 if (minutes<10) {
-                                    minutes = +"0"+minutes;
+                                    minutes = "0"+minutes;
                                 }
                             hour_on ++;
                             if (hour_on>23) {
                                 hour_on = hour_on-24;
                                     if (hour_on<10) {
-                                        hour_on = +"0"+hour_on;   
+                                        hour_on = "0"+hour_on;   
                                     }
                             }    
                         }
                         var time_on = hour_on+":"+minutes;
                         document.getElementById('voz_t').textContent = time_on;
+                        fact();
                     }
 //--------------------------------------------------------------------------------------------------------------------------------                    
                     else {  //очаг найден  
@@ -86,17 +92,18 @@ function gdzs() {
                         if (minutes_och>59) {
                             minutes_och = minutes_och-60;
                                 if (minutes_och<10) {
-                                    minutes_och = +"0"+minutes_och;
+                                    minutes_och = "0"+minutes_och;
                                 }
                                 hour_och ++;
                             if (hour_och>23) {
                                 hour_och = hour_och-24;
                                     if (hour_och<10) {
-                                        hour_och = +"0"+hour_och;   
+                                        hour_och = "0"+hour_och;   
                                     }
                             }  
                         }
                         document.getElementById('voz_t').textContent = hour_och+":"+minutes_och;
+                        fact();
                     }
 //--------------------------------------------------------------------------------------------------------------------------------                    
                 } else {    // легкие условия
@@ -115,18 +122,19 @@ function gdzs() {
                         if (minutes>59) {
                             minutes = minutes-60;
                                 if (minutes<10) {
-                                    minutes = +"0"+minutes;
+                                    minutes = "0"+minutes;
                                 }
                             hour_on ++;
                             if (hour_on>23) {
                                 hour_on = hour_on-24;
                                     if (hour_on<10) {
-                                        hour_on = +"0"+hour_on;   
+                                        hour_on = "0"+hour_on;   
                                     }
                             }    
                         }
                         var time_on = hour_on+":"+minutes;
                         document.getElementById('voz_t').textContent = time_on;
+                        fact();
                     }
 //-------------------------------------------------------------------------------------------------------------------------------- 
                     else { // очаг найден
@@ -151,35 +159,34 @@ function gdzs() {
                         if (minutes_och>59) {
                             minutes_och = minutes_och-60;
                                 if (minutes_och<10) {
-                                    minutes_och = +"0"+minutes_och;
+                                    minutes_och = "0"+minutes_och;
                                 }
                                 hour_och ++;
                             if (hour_och>23) {
                                 hour_och = hour_och-24;
                                     if (hour_och<10) {
-                                        hour_och = +"0"+hour_och;   
+                                        hour_och = "0"+hour_och;   
                                     }
                             }  
                         }
                         document.getElementById('voz_t').textContent = hour_och+":"+minutes_och;
-                        
+                        fact();                        
                     }
-//--------------------------------------------------------------------------------------------------------------------------------        
-                    
-                }    
+                }
     })
 
-    document.querySelector('.b-2').addEventListener('click', ()=>{
-        var clear;
-        document.getElementById('temp').textContent = clear;
-        document.getElementById('p_zatrata').textContent = clear;
-        document.getElementById('rab').textContent = clear;
-        document.getElementById('p_max_pad').textContent = clear;
-        document.getElementById('delta_t').textContent = clear;
-        document.getElementById('p_min_och').textContent = clear;
-        document.getElementById('p_min_on').textContent = clear;
-        document.getElementById('p_kon_out').textContent = clear;
+    document.querySelector('#b_2').addEventListener('click', ()=>{
+        var clear = '';
         document.getElementById('time_on').textContent = clear;
+        document.getElementById('p_min_on').textContent = clear;
+        document.getElementById('p_min_och').textContent = clear;
+        document.getElementById('p_zatrata').textContent = clear;
+        document.getElementById('p_kon_out').textContent = clear;
+        document.getElementById('rab').textContent = clear;
+        document.getElementById('temp').textContent = clear;
+        document.getElementById('time_ozhid').textContent = clear;
         document.getElementById('voz_t').textContent = clear;
+        document.getElementById('delta_t').textContent = clear;
+        document.getElementById('fact').textContent = clear;
     })
 }

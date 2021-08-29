@@ -17,18 +17,19 @@
 }
 body {
     font-family: Roboto-Light;
+    background-color: darkgray;
 }
 h1 {
-    padding: 10px;
-    margin-top: 20px;
+    margin-top: 16px;
     text-align: center;
 }
-.b-1, .b-2 {
-    margin-left: 20px;
-    width: 120px;
+.button, .p_min_on, .p_min_och {
+    margin: 20px 0 0 20px;
+    width: 50%;
+    
 }
-.p_min_on, .p_min_och, .time_on, .time_och, .hour_on, .min_on, .hour_out, .min_out, .hour_och, .min_och{
-    margin-left: 20px; 
+.p_min_on, .p_min_och, .time_on, .time_och, .hour_on, .min_on, .hour_out, .min_out, .hour_och, .min_och, .text{
+    margin-left: 20px;
     margin-top: 20px;
 }
 .formul {

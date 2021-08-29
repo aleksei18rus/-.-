@@ -50,24 +50,25 @@
     <!--a href="../lndex.html">К распорядку</a-->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12 col-md-5 col-xl-5">
-                <h1>Калькулятор ГДЗС</h1>
-                <input type="checkbox" class="ochag" id="ochag" style="margin-top: 10px; margin-left: 20px;">
-                    <label for="ochag" ><b>Очаг не найден.</b></label></br>
-                <input type="checkbox" class="usloviya" id="usloviya" style="margin-top: 10px; margin-left: 20px;">
-                    <label for="usloviya"><b>Сложные условия.</b></label></br>
-                <div class="time_0">
-                    <input type="number" class="hour_on" name="hour_on" min="0" max="23">
-                    <input type="number" class="min_on" name="min_on" min="0" max="59"> <b>Время включения</b></br>
-                    <input type="number" class="hour_och" name="och" min="0" max="23">
-                    <input type="number" class="min_och" name="min_och" min="0" max="59"> <b>Время у очага</b></br>
-                    <input type="number" class="hour_out" name="hour_out" min="0" max="23">
-                    <input type="number" class="min_out" name="min_out" min="0" max="59"> <b>Время выхода из НДС</b></br>
-                </div>
-                <input type="number" class="p_min_on" size="50" placeholder="Pmin.вкл.">
-                <button class="b-1 btn btn-primary"><b>Расчитать</b></button></br>
-                <input type="number" class="p_min_och" size="50" placeholder="Pmin.очаг.">
-                <button class="b-2 btn btn-primary"><b>Очистить</b></button></br>
+            <div class="col-sm-12 col-md-6 col-xl-6">
+                        <h1><b>Журнал учета работающих звеньев ГДЗС</b></h1>
+                    <input type="checkbox" class="ochag" id="ochag" style="margin-top: 10px; margin-left: 20px;">
+                        <label for="ochag" ><b>  Очаг не найден.</b></label></br>
+                    <input type="checkbox" class="usloviya" id="usloviya" style="margin-top: 10px; margin-left: 20px;">
+                        <label for="usloviya"><b>Сложные условия.</b></label><br>       
+                    <input type="number" class="hour_on" name="hour_on" min="0" max="23" placeholder="час.">
+                    <input type="number" class="min_on" name="min_on" min="0" max="59" placeholder="мин."> 
+                    <b>Время включения</b></br>
+                    <input type="number" class="hour_och" name="och" min="0" max="23" placeholder="час.">
+                    <input type="number" class="min_och" name="min_och" min="0" max="59" placeholder="мин."> 
+                    <b>Время у очага</b></br>
+                    <input type="number" class="hour_out" name="hour_out" min="0" max="23" placeholder="час.">
+                    <input type="number" class="min_out" name="min_out" min="0" max="59" placeholder="мин."> 
+                    <b>Время выхода из НДС</b></br>
+                    <input type="number" class="p_min_on" size="50" placeholder="Введите Pmin.вкл."></br>
+                    <input type="number" class="p_min_och" size="50" placeholder="Введите Pmin.очаг."></br>
+                    <button class="button" id="b_1"><b>Расчитать</b></button></br>
+                    <button class="button" id="b_2"><b>Очистить</b></button></br>
                 <div class="tablica">
                     <table class="table table-bordered table-light" style="text-align: left;">
                         <tr>
@@ -87,19 +88,19 @@
                             <th><i style="opacity: 0.7;">ул. Ленина 45</i></th>
                         </tr>
                         <tr>
-                            <th>Время включения, час. мин.</th>
+                            <th>Время включения,<i style="color: red;"><br> (час. мин.)</i></th>
                             <th id="time_on"></th>
                         </tr>
                         <tr>
-                            <th>Давление при входе в НДС, <br><i style="color: red;"> Pmin.вкл.</i></th>
+                            <th>Давление при входе в НДС, <br><i style="color: red;"> Pmin.вкл. (атм.)</i></th>
                             <th id="p_min_on"></th>
                         </tr>
                         <tr>
-                            <th>Давление по прибытию к месту</br> выполнения задания (очаг), <br><i style="color: red;">Pmin.оч.</i></th>
+                            <th>Давление по прибытию к месту</br> выполнения задания (очаг), <br><i style="color: red;">Pmin.оч. (атм.)</i></th>
                             <th id="p_min_och"></th>
                         </tr>
                         <tr>
-                            <th>Затрачено на путь к месту</br> выполнения задания, <br> <i style="color: red;"> Pmax.затрачено.</i></th>
+                            <th>Затрачено на путь к месту</br> выполнения задания, <br> <i style="color: red;"> Pmax.затрачено. (атм.)</i></th>
                             <th id="p_zatrata"></th>   
                         </tr>
                         <tr>
@@ -107,7 +108,7 @@
                             <th><img src="/fire/img/rospis.png" alt="" style="width: 100%; height: 60px; opacity: 0.7;"></th>   
                         </tr>
                         <tr>
-                            <th>Контрольное давление при котором </br>звену необходимо возвращаться </br>на свежий воздух, <br><i style="color: red;"> Pк.вых.</i></th>
+                            <th>Контрольное давление при котором </br>звену необходимо возвращаться </br>на свежий воздух, <br><i style="color: red;"> Pк.вых. (атм.)</i></th>
                             <th id="p_kon_out"></th>   
                         </tr>
                         <tr>
@@ -123,26 +124,26 @@
                             <th id="time_ozhid"></th>
                         </tr>
                         <tr>
-                            <th>Время подачи команды постовым </br>на возвращение звена ГДЗС, мин.</th>
+                            <th>Время подачи команды постовым </br>на возвращение звена ГДЗС, <i style="color: red;">(мин.)</i></th>
                             <th id="voz_t"></th>
                         </tr>
                         <tr>
-                            <th style="color: green;">Время подачи команды постовым </br>на возвращение звена ГДЗС, △T мин. </br>
-                            <i style="color: red;">(нет в журнале работющих звеньев)</i></th>
+                            <th style="color: green;">Время △T (если очаг не найден) <i style="color: red;">(мин.)</i> </br>
+                            <i style="color: rgb(206, 159, 5);">(нет в журнале работющих звеньев)</i></th>
                             <th id="delta_t"></th>
                         </tr>
                         <tr>
-                            <th>Фактическое время возвращения на ПБ,</br> час. мин.</th>
-                            <th></th>
+                            <th>Фактическое время возвращения на ПБ,</br> <i style="color: red;" >(час. мин.)</i></th>
+                            <th id="fact"></th>
                         </tr>
                         <tr>
-                            <th>Фактическое давление в баллоне </br>время возвращения на ПБ, атм.</th>
+                            <th>Фактическое давление в баллоне </br>время возвращения на ПБ, <br><i style="color: red;">(атм.)</i></th>
                             <th></th>
                         </tr>
                     </table>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-7 col-xl-7">
+            <div class="col-sm-12 col-md-6 col-xl-6">
                 <div class="formul">
                     <img src="/fire/img/формулы.svg" alt="" style="width: 100%;">
                     <img src="/fire/img/формулы2.svg" alt="" style="width: 100%">
