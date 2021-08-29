@@ -4,7 +4,7 @@
 }
 @media screen and (min-width: 567px) {
     .tablica {
-        width: 40%;
+        width: 100%;
         margin-top: 50px;
     }
 }
@@ -27,7 +27,10 @@ h1 {
     margin-left: 20px;
     width: 120px;
 }
-.p_min_on, .p_min_och, .time_on, .time_och, #Hour {
+.p_min_on, .p_min_och, .time_on, .time_och, .hour_on, .min_on, .hour_out, .min_out, .hour_och, .min_och{
     margin-left: 20px; 
     margin-top: 20px;
+}
+.formul {
+    margin: 5px 0 0 0;
 }
