@@ -11,7 +11,7 @@
     <!--link rel="stylesheet" href="css/fontawesome/css/all.min.css"-->
     <link rel="stylesheet" href="../css/style_gdzs.css">
     <script src="../js/taktika.js"></script>
-    <title>ГДЗС</title>
+    <title>Тактика</title>
 </head>
 <body onload="taktika()">
     <div>
@@ -48,13 +48,12 @@
             </nav>
         </div>   
     </div>
-    <!--a href="../lndex.html">К распорядку</a-->
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 col-md-6 col-xl-6">
                     <div class="input">
-                        <input type="checkbox" class="ochag" id="ochag" style="margin-top: 10px; margin-left: 20px;">
-                            <label for="ochag" ><b>  Очаг не найден.</b></label></br>
+                        <!--input type="checkbox" id="time_rab">
+                            <label for="time_rab" ><b>Время работы стволов от АЦ</b></label></br>
                         <input type="checkbox" class="usloviya" id="usloviya" style="margin-top: 10px; margin-left: 20px;">
                             <label for="usloviya"><b>Сложные условия.</b></label><br> 
                         <input type="time" class="time_1">     
@@ -62,16 +61,23 @@
                         <input type="time" class="time_2">
                         <b>Время у очага</b></br>
                         <input type="time" class="time_3"> 
-                        <b>Фактическое Твых. из НДС</b></br>
-                        <input type="number" class="p_min_on" size="3" placeholder="атм.">
-                            <label for="p_min_on"><b>Введите Pmin.вкл.</b></label><br>
-                        <input type="number" class="p_min_och" size="3" placeholder="атм.">
-                            <label for="p_min_och"><b>Введите Pmin.вкл.</b></label><br>
+                        <b>Фактическое Твых. из НДС</b></br-->
+                        <input type="number" id="v_cis" size="10" placeholder="л.">
+                            <label for="v_cis"><b>Объем цистерны.</b></label><br>
+                        <input type="number" id="n_ruk_51" size="3" placeholder="шт.">
+                            <label for="n_ruk_51"><b>Кол-во рукавов 51.</b></label><br>
+                        <input type="number" id="n_ruk_66" size="3" placeholder="шт.">
+                            <label for="n_ruk_66"><b>Кол-во рукавов 66.</b></label><br>
+                        <input type="number" id="n_ruk_77" size="3" placeholder="шт.">
+                            <label for="n_ruk_77"><b>Кол-во рукавов 77.</b></label><br>
+                        <input type="number" id="n_stv_a" size="3" placeholder="шт.">
+                            <label for="n_stv_a"><b>Кол-во стволов А.</b></label><br>
+                        <input type="number" id="n_stv_b" size="3" placeholder="шт.">
+                            <label for="n_stv_b"><b>Кол-во стволов Б.</b></label><br>
+                        <div id="t_rab" style="color: red;"></div>
                     </div>
-                    <div class="btn">
                         <button class="btn btn-dark" id="b_1" style="margin-top: 10px;"><b>Расчитать</b></button></br>
-                        <button class="btn btn-dark" id="b_2"><b>Очистить</b></button></br>
-                    </div>
+                        <!--button class="btn btn-dark" id="b_2"><b>Очистить</b></button></br-->
                 </div>
             </div>
         </div>  
