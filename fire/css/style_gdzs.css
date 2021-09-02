@@ -5,14 +5,14 @@
 @media screen and (min-width: 567px) {
     .tablica {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 5px;
     }
 }
 @media screen and (max-width: 567px) {
     .tablica {
         width: 100%;
         display: block;
-        margin: 50px auto 0 auto;
+        margin: 10px auto 0 auto;
     }
 }
 body {
@@ -23,17 +23,16 @@ h1 {
     margin-top: 16px;
     text-align: center;
 }
-.button, .p_min_on, .p_min_och {
-    margin: 20px 0 0 20px;
-    width: 50%;
-    
-}
-.time_1, .time_2, .time_3{
-    width: 150px;
+.time_1, .time_2, .time_3, .p_min_on, .p_min_och {
+    width: 100px;
     margin-left: 20px;
-    margin-top: 20px;
-    
+    margin-top: 20px;   
+}
+.btn {
+    display: block;
+    width: 70%;
+    text-align: center;
 }
 .formul {
-    margin: 5px 0 0 0;
+    margin: 30px 0 0 0;
 }

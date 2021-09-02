@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="/fire/img/logo.png">
+    <!--link rel="stylesheet" href="css/fontawesome/css/all.min.css"-->
+    <link rel="stylesheet" href="../css/style_gdzs.css">
+    <script src="../js/taktika.js"></script>
+    <title>ГДЗС</title>
+</head>
+<body onload="taktika()">
+    <div>
+        <div class="header" style="background-color: rgb(33, 37, 41);">
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(33, 37, 41);">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://glazovhelp.ru/fire/lndex.html"> <img src="/fire/img/logo.png" alt="logo" width="50px" class="logo"> FireHelp</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav" >
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Разделы
+                            </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="/fire/pages/gdzs.html">ГДЗС</a></li>
+                                    <li><a class="dropdown-item" href="/fire/pages/taktika.html">Тактика</a></li>
+                                    <li><a class="dropdown-item" href="/fire/pages/404.html">Охрана труда</a></li>
+                                    <li><a class="dropdown-item" href="/fire/pages/normativ.html">Нормативы</a></li>
+                                    <!--li><a class="dropdown-item" href="#instrument_1">Инструменты</a></li-->
+                                </ul>
+                            </li>
+                            <!--li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/fire/doc/Приказ МЧС России от 09.01.2013 № 3.doc">Скачать Приказ № 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#vk_comments">Отзывы</a>
+                            </li-->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>   
+    </div>
+    <!--a href="../lndex.html">К распорядку</a-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-xl-6">
+                    <div class="input">
+                        <input type="checkbox" class="ochag" id="ochag" style="margin-top: 10px; margin-left: 20px;">
+                            <label for="ochag" ><b>  Очаг не найден.</b></label></br>
+                        <input type="checkbox" class="usloviya" id="usloviya" style="margin-top: 10px; margin-left: 20px;">
+                            <label for="usloviya"><b>Сложные условия.</b></label><br> 
+                        <input type="time" class="time_1">     
+                        <b>Время включения</b></br>
+                        <input type="time" class="time_2">
+                        <b>Время у очага</b></br>
+                        <input type="time" class="time_3"> 
+                        <b>Фактическое Твых. из НДС</b></br>
+                        <input type="number" class="p_min_on" size="3" placeholder="атм.">
+                            <label for="p_min_on"><b>Введите Pmin.вкл.</b></label><br>
+                        <input type="number" class="p_min_och" size="3" placeholder="атм.">
+                            <label for="p_min_och"><b>Введите Pmin.вкл.</b></label><br>
+                    </div>
+                    <div class="btn">
+                        <button class="btn btn-dark" id="b_1" style="margin-top: 10px;"><b>Расчитать</b></button></br>
+                        <button class="btn btn-dark" id="b_2"><b>Очистить</b></button></br>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>  
+</body>
+</html>

@@ -30,16 +30,16 @@
                             </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><a class="dropdown-item" href="/fire/pages/gdzs.html">ГДЗС</a></li>
-                                    <li><a class="dropdown-item" href="/fire/pages/404.html">Тактика</a></li>
+                                    <li><a class="dropdown-item" href="/fire/pages/taktika.html">Тактика</a></li>
                                     <li><a class="dropdown-item" href="/fire/pages/404.html">Охрана труда</a></li>
                                     <li><a class="dropdown-item" href="/fire/pages/normativ.html">Нормативы</a></li>
                                     <!--li><a class="dropdown-item" href="#instrument_1">Инструменты</a></li-->
                                 </ul>
                             </li>
-                            <!--li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#contact">Контакты</a>
-                            </li>
                             <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/fire/doc/Приказ МЧС России от 09.01.2013 № 3.doc">Скачать Приказ № 3</a>
+                            </li>
+                            <!--li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#vk_comments">Отзывы</a>
                             </li-->
                         </ul>
@@ -53,20 +53,26 @@
         <div class="row">
             <div class="col-sm-12 col-md-6 col-xl-6">
                         <h1><b>Журнал учета работающих звеньев ГДЗС</b></h1>
-                    <input type="checkbox" class="ochag" id="ochag" style="margin-top: 10px; margin-left: 20px;">
-                        <label for="ochag" ><b>  Очаг не найден.</b></label></br>
-                    <input type="checkbox" class="usloviya" id="usloviya" style="margin-top: 10px; margin-left: 20px;">
-                        <label for="usloviya"><b>Сложные условия.</b></label><br> 
-                    <input type="time" class="time_1">     
-                    <b>Время включения</b></br>
-                    <input type="time" class="time_2">
-                    <b>Время у очага</b></br>
-                    <input type="time" class="time_3"> 
-                    <b>Фактическое Твых. из НДС</b></br>
-                    <input type="number" class="p_min_on" size="50" placeholder="Введите Pmin.вкл."></br>
-                    <input type="number" class="p_min_och" size="50" placeholder="Введите Pmin.очаг."></br>
-                    <button class="button" id="b_1"><b>Расчитать</b></button></br>
-                    <button class="button" id="b_2"><b>Очистить</b></button></br>
+                    <div class="input">
+                            <input type="checkbox" class="ochag" id="ochag" style="margin-top: 10px; margin-left: 20px;">
+                            <label for="ochag" ><b>  Очаг не найден.</b></label></br>
+                        <input type="checkbox" class="usloviya" id="usloviya" style="margin-top: 10px; margin-left: 20px;">
+                            <label for="usloviya"><b>Сложные условия.</b></label><br> 
+                        <input type="time" class="time_1">     
+                        <b>Время включения</b></br>
+                        <input type="time" class="time_2">
+                        <b>Время у очага</b></br>
+                        <input type="time" class="time_3"> 
+                        <b>Фактическое Твых. из НДС</b></br>
+                        <input type="number" class="p_min_on" size="3" placeholder="атм.">
+                            <label for="p_min_on"><b>Введите Pmin.вкл.</b></label><br>
+                        <input type="number" class="p_min_och" size="3" placeholder="атм.">
+                            <label for="p_min_och"><b>Введите Pmin.вкл.</b></label><br>
+                    </div>
+                    <div class="btn">
+                        <button class="btn btn-dark" id="b_1" style="margin-top: 10px;"><b>Расчитать</b></button></br>
+                        <button class="btn btn-dark" id="b_2"><b>Очистить</b></button></br>
+                    </div>
                 <div class="tablica">
                     <table class="table table-bordered table-light" style="text-align: left;">
                         <tr>
@@ -127,7 +133,7 @@
                         </tr>
                         <tr>
                             <th style="color: green;">△T (если очаг не найден),<br> <i style="color: red;">(мин.)</i> </br>
-                            <i style="color: rgb(206, 159, 5);">(нет в журнале работющих звеньев)</i></th>
+                            <i style="color: rgb(206, 159, 5);">(нет данного пукта в журнале)</i></th>
                             <th id="delta_t"></th>
                         </tr>
                         <tr>
@@ -147,7 +153,6 @@
                     <img src="/fire/img/формулы2.svg" alt="" style="width: 100%">
                 </div>
             </div>
-            
         </div>  
     </div>  
 </body>
