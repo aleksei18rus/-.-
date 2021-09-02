@@ -13,6 +13,12 @@ function gdzs() {
         console.log(time_1_on);
         var hour_on = time_1_on[0]+time_1_on[1];
         var min_on = time_1_on[3]+time_1_on[4];
+        var time_3 = document.querySelector('.time_3').value;//фактическое время
+        var time_3_out = time_3.split('');
+        console.log(time_3_out);
+        var hour_out = time_3_out[0]+time_3_out[1];
+        var min_out = time_3_out[3]+time_3_out[4];
+        document.getElementById('fact').textContent = hour_out+":"+min_out;
 
         function ob_time() {
 
@@ -38,13 +44,8 @@ function gdzs() {
             var time_on = hour_on+":"+minutes;
             document.getElementById('time_ozhid').textContent = time_on;
         }
-        function fact() {
-            let time_3 = document.querySelector('.time_3').value;
-            let time_3_out = time_3.split('');
-            console.log(time_3_out);
-            let hour_out = time_3_out[0]+time_3_out[1];
-            let min_out = time_3_out[3]+time_3_out[4];
-            document.getElementById('fact').textContent = hour_out+":"+min_out;
+        function och(){
+            alert("Какое Pмин.очага? Введите данные.");
         }
 //-------------------------------------------------------------------------------------------------------------------------------- 
     if (document.querySelector('.usloviya').checked) {  //проверка условий, сложные
@@ -72,7 +73,7 @@ function gdzs() {
             }
             var time_on = hour_on+":"+minutes;
             document.getElementById('voz_t').textContent = time_on;
-            fact();
+            document.getElementById('fact').textContent = '';
         }
 //--------------------------------------------------------------------------------------------------------------------------------                    
         else {  //очаг найден  
@@ -86,6 +87,7 @@ function gdzs() {
                 document.getElementById('p_kon_out').textContent = p_kon_out;
                 var t_rab_och = ((p_min_och - p_kon_out)*6.8)/(kof_szh* 40);
             } else {
+                och();
                 document.getElementById('p_zatrata').textContent = "Какое Pмин.очага?";
             }
             if (t_rab_och>0) {
@@ -111,7 +113,17 @@ function gdzs() {
                 }  
             }
             document.getElementById('voz_t').textContent = hour_och+":"+minutes_och;
-            fact();
+            if (min_out > min_och) {
+                let a = (min_out - min_och)*6.5;
+                console.log(a);
+                fact_p = p_min_och-a;
+                document.getElementById('fact_p').textContent = Math.floor(fact_p);       
+            } else {
+                let a = (60+(min_out - min_och))*6.5;
+                fact_p = p_min_och-a;
+                console.log(a);
+                document.getElementById('fact_p').textContent = Math.floor(fact_p);
+            } 
         }
 //--------------------------------------------------------------------------------------------------------------------------------                    
     } else {    // легкие условия
@@ -141,7 +153,7 @@ function gdzs() {
             }
             var time_on = hour_on+":"+minutes;
             document.getElementById('voz_t').textContent = time_on;
-            fact();
+            document.getElementById('fact').textContent = '';
         }
 //-------------------------------------------------------------------------------------------------------------------------------- 
         else { // очаг найден
@@ -155,7 +167,8 @@ function gdzs() {
                 document.getElementById('p_kon_out').textContent = p_kon_out;
                 var t_rab_och = ((p_min_och - p_kon_out)*6.8)/(kof_szh* 40);
             } else {
-                document.getElementById('p_zatrata').textContent = "Какое Pмин.очага?"; 
+                och();
+                document.getElementById('p_zatrata').textContent = "Какое Pмин.очага?";
             }
             if (t_rab_och>0) {
                 document.getElementById('rab').textContent = Math.floor(t_rab_och); // время работы у очага
@@ -180,7 +193,17 @@ function gdzs() {
                 }  
             }
             document.getElementById('voz_t').textContent = hour_och+":"+minutes_och;
-            fact();                        
+            if (min_out > min_och) {
+                let a = (min_out - min_och)*6.5;
+                console.log(a);
+                fact_p = p_min_och-a;
+                document.getElementById('fact_p').textContent = Math.floor(fact_p);       
+            } else {
+                let a = (60+(min_out - min_och))*6.5;
+                fact_p = p_min_och-a;
+                console.log(a);
+                document.getElementById('fact_p').textContent = Math.floor(fact_p);
+            }                      
         }
     }
     })
