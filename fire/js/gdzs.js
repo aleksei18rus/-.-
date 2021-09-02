@@ -221,5 +221,6 @@ function gdzs() {
         document.getElementById('voz_t').textContent = clear;
         document.getElementById('delta_t').textContent = clear;
         document.getElementById('fact').textContent = clear;
+        document.getElementById('fact_p').textContent = clear;
     })
 }
