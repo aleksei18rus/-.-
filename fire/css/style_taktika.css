@@ -1,0 +1,16 @@
+.v_rab_ac {
+    margin: 10px auto 10px auto;
+    width: 100%;
+    display: block;
+    border: 2px solid;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+}
+input, label {
+    width: 100%;
+    font-style: italic;
+}
+p {
+    
+}
