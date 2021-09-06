@@ -49,7 +49,7 @@ document.querySelector('#b_2').addEventListener('click', ()=>{
             }  
     
     if (t_rab_gps<=0 || n_gps==0) {
-        alert('Не верное решение, перепроверь данные');
+        alert('Не верное решение, перепроверь данные.');
         document.out_gps.out_v_gps.value = 'ошибка';
     } else {
         document.out_gps.out_v_gps.value = t_rab_gps.toFixed(2)+' мин.';
