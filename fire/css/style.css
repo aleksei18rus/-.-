@@ -9,7 +9,7 @@
 }
 @media screen and (min-width: 567px) { 
     #timer {
-        font-size: 150px;
+        font-size: 220px;
         text-align: center;
         font-family: Roboto-Bold;
         text-shadow: 5px 5px 5px black;
@@ -26,7 +26,7 @@
     }
     #rasporyadok {
         text-align: center;
-        margin: 150px auto 0 auto;
+        margin: 200px auto 0 auto;
         width: 50%;
     }
 
