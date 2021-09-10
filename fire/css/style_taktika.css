@@ -1,13 +1,19 @@
+body {
+    background-image: url(../img/psp.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 .v_rab_ac {
     margin: 10px auto 10px auto;
-    width: 100%;
+    width: 90%;
     display: block;
     border: 2px solid;
     padding: 5px;
     text-align: center;
     box-shadow: 5px 5px 10px black;
 }
-input, label {
-    width: 100%;
+input, label, .v_rab_ac {
+    width: 90%;
     font-style: italic;
+    background-color: white;
 }

@@ -7,10 +7,9 @@
     src: url(../fonts/digital-7\ \(italic\).ttf);
 }
 body {
-    /*background-image: url(../img/psp.jpg);
+    background-image: url(../img/psp.jpg);
     background-size: cover;
-    background-attachment: fixed;*/
-    background-color: darkgray;
+    background-attachment: fixed;
     font-family: Roboto-Light;
 }
 .secundomer {
