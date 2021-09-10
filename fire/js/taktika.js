@@ -14,7 +14,7 @@ document.querySelector('#b_1').addEventListener('click', ()=>{
         alert('Не верное решение, воды не хватитвообще, перепроверь данные');
         document.out.out_v_stv.value = 'ошибка';
     } else {
-        document.out.out_v_stv.value = t_rab_stv.toFixed(2)+' мин.';
+        document.out.out_v_stv.value = t_rab_stv.toFixed(1)+' мин.';
     }
     })
 document.querySelector('#b_2').addEventListener('click', ()=>{
@@ -52,7 +52,7 @@ document.querySelector('#b_2').addEventListener('click', ()=>{
         alert('Не верное решение, перепроверь данные.');
         document.out_gps.out_v_gps.value = 'ошибка';
     } else {
-        document.out_gps.out_v_gps.value = t_rab_gps.toFixed(2)+' мин.';
+        document.out_gps.out_v_gps.value = t_rab_gps.toFixed(1)+' мин.';
     }
     })
 }
