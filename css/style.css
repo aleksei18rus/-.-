@@ -1,131 +1,79 @@
-.body {
-    min-width: 320;
-    height: auto;
-    background-image: url(../img/welcome.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    margin-left: auto;
-    margin-right: auto;
-    height: 1000px;
-}
-
-@font-face {
-    font-family: Roboto-Regular;
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: Roboto-Medium;
-    src: url(../fonts/Roboto/Roboto-Medium.ttf);
-}
-@font-face {
-    font-family: Roboto-Light;
-    src: url(../fonts/Roboto/Roboto-Light.ttf);
-}
-
-@media screen and (min-width: 800px) {
-    .rowcenter {
-        position:absolute;
-        margin-right: 450px;
-    }
-}
-
-@media (max-width: 800px) {
-    .cpu img {
+@media (max-width: 768px) {
+    .welcome img {
         display: none;
     }
+    .card-tv, .card-notebook, .card-ps, .card-fone, .card-inst {
+        display: block;
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .row, img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
   }
-.header {
-    padding: 5px;
-    font-family: Roboto-Light;
-    width: 100%;
+body {
+    /*background-image: url(/img/welcome.jpg);
+    background-size: cover;
+    background-attachment: fixed;*/
+    max-width: 1600px;
+    font-family: 'Hind Siliguri', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+.navbar {
+    background-color:#FFFFFF;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    height: 80px;
+}
+.navbar-brand {
+    font-weight: 600;
+}
 .logo {
     margin: 0 10px 0 10px;
 }
-
-.card-body, .bottoms {
-    font-family: Roboto-Regular;
-    text-align: center;
-}
-
-.card-body img {
-    margin-top: 15px;  
-}
-
-.card img {
-    display: inline-block;
-    overflow: hidden;
-    transition: 1s;
-}
-.card img:hover {
-    transform: scale(1.05);
-}
-
-.rowcenter {
-    font-family: Roboto-Medium;
-    margin-bottom: 50px;
-    text-align: center;
-    padding: 3px;
-    text-shadow: 5px 5px 5px rgb(129, 129, 136);
-}
-
-.card-title, .bottoms {
-    text-align: center;
-}
-
-.acs_instr {
-    transition: 1s;
-}
-
-.acs_instr:hover {
-    transform: scale(2);
-}
-
 .welc {
+    margin-top: 128px;
+    text-align: center;
+    font-weight: 600;
     font-size: 50px;
-    margin-top: 100px;
+    line-height: 73px;
+    text-shadow: 1px 1px 1px black;
 }
-
-.bottoms {
-    margin-bottom: 5px;
-    padding: 20px;
+.welc_2 {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
 }
-
-a, p {
-    text-decoration: none; color:white;
+.brands {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-a:hover {
-    text-decoration: none; color:blueviolet;
+.card-tv, .card-notebook, .card-ps, .card-fone, .card-inst {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
 }
-
-.card {
-    padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 5px 5px 5px rgb(77, 77, 85);
-}
-
-.card-body p {
+.footers, a {
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
     color: black;
+    padding: 3%;
 }
-
-.card-body a {
-    text-decoration: none; color: red;
-}
-
-.catalog {
-    margin: 5%;
-}
-
-.container_bottoms {
-    text-decoration: none; color: white;
-    font-family: Roboto-Light;
-}
-
 .map, .comments{
-    font-family: Roboto-Light;
     text-align: center;
     font-size: 30px;
     padding: 20px;
