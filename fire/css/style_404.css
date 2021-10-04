@@ -20,10 +20,12 @@
   p {
       font-size: 20%;
   }
-  .hit-the-floor {
-    text-align: center;
-  }
   
   body {
+    min-width: 567px;
     background-color: #f1f1f1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
