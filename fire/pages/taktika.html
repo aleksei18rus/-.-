@@ -56,121 +56,154 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 col-md-3 col-xl-3">
-                <div class="input">
-                    <div class="v_rab_ac">
-                        <p><b>Время работы стволовот АЦ<br> или откр. водоисточника.</b></p>
-                        
-                        <label for="v_otk"><b>Объем водоисточника (литры)*</b></label><br>
-                            <input type="number" id="v_otk" size="10" placeholder="Если он используется">
-                        <label for="v_cis"><b>Объем цистерны.</b></label><br>
-                            <input type="number" id="v_cis" size="10" value="3200">
-                        <label for="n_51"><b>Кол-во рукавов 51.</b></label><br>   
-                            <input type="number" id="n_51" size="3" value="2">
-                        <label for="n_66"><b>Кол-во рукавов 66.</b></label><br>     
-                            <input type="number" id="n_66" size="3" value="0">
-                        <label for="n_77"><b>Кол-во рукавов 77.</b></label><br>    
-                            <input type="number" id="n_77" size="3" value="2">
-                        <label for="n_a"><b>Кол-во стволов А.</b></label><br>    
-                            <input type="number" id="n_a" size="3" value="0" max="6" min="0"><br>
-                        <label for="q_a"><b>Расход ствола А. (л/с.)</b></label><br>    
-                            <input type="number" id="q_a" size="3" value="7.4">
-                        <label for="n_b"><b>Кол-во стволов Б.</b></label><br>    
-                            <input type="number" id="n_b" size="3" value="1" max="6" min="0"><br>
-                        <label for="q_b"><b>Расход ствола Б. (л/с.)</b></label><br>    
-                        <input type="number" id="q_b" size="3" value="3.7">
-                        <form name="out">
-                            <label for="out"><b style="color: red;">Результат (мин).</b></label><br>
-                                <input name="out" id="out_v_stv">          
-                        </form>
-                        <button class="btn btn-dark" id="b_1" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
+                <div class="card-body">   
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#stvol" 
+                    aria-expanded="false" aria-controls="stvol" style="border-radius: 10px; width: 100%;">
+                        <h5 class="card-title">Время работы стволовот АЦ или водоисточника.</h5>
+                    </button><br>
+                    <div class="collapse" id="stvol">                                    
+                        <div class="input">
+                            <div class="v_rab_ac">
+                                <p><b>Время работы стволовот АЦ<br> или откр. водоисточника.</b></p>
+                                
+                                <label for="v_otk"><b>Объем водоисточника (литры)*</b></label><br>
+                                    <input type="number" id="v_otk" size="10" placeholder="Если он используется">
+                                <label for="v_cis"><b>Объем цистерны.</b></label><br>
+                                    <input type="number" id="v_cis" size="10" value="3200">
+                                <label for="n_51"><b>Кол-во рукавов 51.</b></label><br>   
+                                    <input type="number" id="n_51" size="3" value="2">
+                                <label for="n_66"><b>Кол-во рукавов 66.</b></label><br>     
+                                    <input type="number" id="n_66" size="3" value="0">
+                                <label for="n_77"><b>Кол-во рукавов 77.</b></label><br>    
+                                    <input type="number" id="n_77" size="3" value="2">
+                                <label for="n_a"><b>Кол-во стволов А.</b></label><br>    
+                                    <input type="number" id="n_a" size="3" value="0" max="6" min="0"><br>
+                                <label for="q_a"><b>Расход ствола А. (л/с.)</b></label><br>    
+                                    <input type="number" id="q_a" size="3" value="7.4">
+                                <label for="n_b"><b>Кол-во стволов Б.</b></label><br>    
+                                    <input type="number" id="n_b" size="3" value="1" max="6" min="0"><br>
+                                <label for="q_b"><b>Расход ствола Б. (л/с.)</b></label><br>    
+                                <input type="number" id="q_b" size="3" value="3.7">
+                                <form name="out">
+                                    <label for="out"><b style="color: red;">Результат (мин).</b></label><br>
+                                        <input name="out" id="out_v_stv">          
+                                </form>
+                                <button class="btn btn-dark" id="b_1" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+                  
+            </div>
+            <div class="col-sm-12 col-md-3 col-xl-3">
+                <div class="card-body">   
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#gps" 
+                    aria-expanded="false" aria-controls="gps" style="border-radius: 10px; width: 100%;">
+                        <h5 class="card-title">Время работы ГПС-600 от <br> АЦ или водоисточника.</h5>
+                    </button><br>
+                    <div class="collapse" id="gps">                                    
+                        <div class="input">
+                            <div class="v_rab_ac">
+                                <p><b>Время работы ГПС-600 от sbor или водоисточника.</b></p>
+                                <label for="v_otk_po"><b>Объем водоисточника (литры)*</b></label><br>
+                                    <input type="number" id="v_otk_po" size="10" placeholder="Если он используется">
+                                <label for="v_cis_po"><b>Объем цистерны.</b></label><br>
+                                    <input type="number" id="v_cis_po" size="10" value="3200">
+                                <label for="v_po"><b>Объем пенобака.</b></label><br>
+                                    <input type="number" id="v_po" size="10" value="200">
+                                <label for="n_51"><b>Кол-во рукавов 51.</b></label><br>   
+                                    <input type="number" id="n_51_po" size="3" value="2">
+                                <label for="n_ruk_66"><b>Кол-во рукавов 66.</b></label><br>     
+                                    <input type="number" id="n_66_po" size="3" value="0">
+                                <label for="n_77"><b>Кол-во рукавов 77.</b></label><br>    
+                                    <input type="number" id="n_77_po" size="3" value="2">
+                                <label for="n_gps"><b>Кол-во стволов ГПС-600.</b></label><br>    
+                                    <input type="number" id="n_gps" size="3" value="1" max="8" min="1">
+                                <form name="out_gps">
+                                    <label for="out_gps"><b style="color: red;">Результат (мин).</b></label><br>
+                                        <input name="out_gps" id="out_v_gps">          
+                                </form>
+                                <button class="btn btn-dark" id="b_2" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
+                            </div>
+                        </div>                
                     </div>
                 </div>                   
             </div>
             <div class="col-sm-12 col-md-3 col-xl-3">
-                <div class="input">
-                    <div class="v_rab_ac">
-                        <p><b>Время работы ГПС-600 от АЦ<br> или откр. водоисточника.</b></p>
-                        <label for="v_otk_po"><b>Объем водоисточника (литры)*</b></label><br>
-                            <input type="number" id="v_otk_po" size="10" placeholder="Если он используется">
-                        <label for="v_cis_po"><b>Объем цистерны.</b></label><br>
-                            <input type="number" id="v_cis_po" size="10" value="3200">
-                        <label for="v_po"><b>Объем пенобака.</b></label><br>
-                            <input type="number" id="v_po" size="10" value="200">
-                        <label for="n_51"><b>Кол-во рукавов 51.</b></label><br>   
-                            <input type="number" id="n_51_po" size="3" value="2">
-                        <label for="n_ruk_66"><b>Кол-во рукавов 66.</b></label><br>     
-                            <input type="number" id="n_66_po" size="3" value="0">
-                        <label for="n_77"><b>Кол-во рукавов 77.</b></label><br>    
-                            <input type="number" id="n_77_po" size="3" value="2">
-                        <label for="n_gps"><b>Кол-во стволов ГПС-600.</b></label><br>    
-                            <input type="number" id="n_gps" size="3" value="1" max="8" min="1">
-                        <form name="out_gps">
-                            <label for="out_gps"><b style="color: red;">Результат (мин).</b></label><br>
-                                <input name="out_gps" id="out_v_gps">          
-                        </form>
-                        <button class="btn btn-dark" id="b_2" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
-                    </div>
-                </div>                   
+                <div class="card-body">   
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#sbor" 
+                    aria-expanded="false" aria-controls="sbor" style="border-radius: 10px; width: 100%;">
+                        <h5 class="card-title">Время свободного распространения пожара</h5>
+                    </button><br>
+                      <div class="collapse" id="sbor">                                    
+                        <div class="input">
+                            <div class="v_rab_ac">
+                                <p><b>Время свободного распространения пожара</b></p>
+                                <label for="t_sbora"><b>Время сбора л/с <br>(норматив 1 мин)*</b></label><br>
+                                    <input type="number" id="t_sbora" size="10" value="1"><br>
+                                    <b>Время до сообщения<br> о пожаре равно времени<br> от начала 
+                                    возникновения<br> до сообщения о нём в ПЧ</b>
+                                    <select name="t_soobcheniya" id="t_soobcheniya" style="width: 90%;">
+                                        <option value="5">5 минут (наличие АПС)</option>
+                                        <option value="10">10 минут (отсутствие АПС)</option>
+                                    </select><br>
+                                    <b>Время развертывания</b>
+                                        <select name="t_razvert" id="t_razvert" style="width: 90%;">
+                                            <option value="3">3 минут (летнее время)</option>
+                                            <option value="7">7 минут (зимнее время)</option>
+                                            <option value="6">6 минут</option>
+                                            <option value="8">8 минут</option>
+                                        </select><br>
+                                <label for="v_sledovaniya"><b>Время следования. (мин.)</b></label><br>
+                                    <input type="number" id="v_sledovaniya" size="10" value="" min="1" placeholder="Введите время">
+                                <form name="svoboda">
+                                    <label for="t_svoboda"><b style="color: red;">Результат (мин).</b></label><br>
+                                        <input name="t_svoboda" id="t_svoboda">          
+                                </form>
+                                <button class="btn btn-dark" id="b_4" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
+                            </div>
+                        </div>           
+                      </div>
+                    </div>    
             </div>
             <div class="col-sm-12 col-md-3 col-xl-3">
-                <div class="input">
-                    <div class="v_rab_ac">
-                        <p><b>Время свободного распространения пожара</b></p>
-                        <label for="t_sbora"><b>Время сбора л/с <br>(норматив 1 мин)*</b></label><br>
-                            <input type="number" id="t_sbora" size="10" value="1"><br>
-                            <b>Время до сообщения<br> о пожаре равно времени<br> от начала 
-                            возникновения<br> до сообщения о нём в ПЧ</b>
-                            <select name="t_soobcheniya" id="t_soobcheniya" style="width: 90%;">
-                                <option value="5">5 минут (наличие АПС)</option>
-                                <option value="10">10 минут (отсутствие АПС)</option>
-                            </select><br>
-                            <b>Время развертывания</b>
-                                <select name="t_razvert" id="t_razvert" style="width: 90%;">
-                                    <option value="3">3 минут (летнее время)</option>
-                                    <option value="7">7 минут (зимнее время)</option>
-                                    <option value="6">6 минут</option>
-                                    <option value="8">8 минут</option>
-                                </select><br>
-                        <label for="v_sledovaniya"><b>Время следования. (мин.)</b></label><br>
-                            <input type="number" id="v_sledovaniya" size="10" value="" min="1" placeholder="Введите время">
-                        <form name="svoboda">
-                            <label for="t_svoboda"><b style="color: red;">Результат (мин).</b></label><br>
-                                <input name="t_svoboda" id="t_svoboda">          
-                        </form>
-                        <button class="btn btn-dark" id="b_4" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
+                <div class="card-body">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#form" 
+                        aria-expanded="false" aria-controls="form" style="border-radius: 10px; width: 100%;">
+                            <h5 class="card-title">Форма пожара<br> 90, 180, 270, 360 градусов.</h5>
+                        </button><br>
+                    <div class="collapse" id="form">                                    
+                        <div class="input">
+                            <div class="v_rab_ac">
+                                <p><b>Форма пожара<br> 90, 180, 270, 360 градусов.</b></p>
+                                <b>Выбрать форму пожара</b>
+                                <select name="forma" id="forma" style="width: 90%;">
+                                    <option value="0.5">180 градусов</option>
+                                    <option value="1">360 градусов</option>
+                                    <option value="0.75">270 градусов</option>
+                                    <option value="0.25">90 градусов</option>
+                                </select>
+                                <b>Глубина тушения</b>
+                                <select name="glubina" id="glubina" style="width: 90%;">
+                                    <option value="5">5 метров (ручной)</option>
+                                    <option value="10">10 метров (лафет)</option>
+                                </select>
+                                <label for="radius"><b>R - радиус</b></label><br>
+                                    <input type="number" id="radius" size="10" value="12">
+                                <form name="pozhar">
+                                    <label for="s_pozhara"><b style="color: red;">Площадь пожара (м2).</b></label><br>
+                                        <input name="s_pozhara" id="s_pozhara">          
+                                    <label for="s_tush_f"><b style="color: red;">Тушение по фронту (м2).</b></label><br>
+                                        <input name="s_tush_f" id="s_tush_f">          
+                                    <label for="s_tush_p"><b style="color: red;">Тушение по периметру (м2).</b></label><br>
+                                        <input name="s_tush_p" id="s_tush_p">          
+                                </form>
+        
+                                <button class="btn btn-dark" id="b_3" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
+                            </div>
+                        </div>                                   
                     </div>
-                </div>                   
-            </div>
-            <div class="col-sm-12 col-md-3 col-xl-3">
-                <div class="input">
-                    <div class="v_rab_ac">
-                        <p><b>Форма пожара<br> 90, 180, 270, 360 градусов.</b></p>
-                        <b>Выбрать форму пожара</b>
-                        <select name="forma" id="forma" style="width: 90%;">
-                            <option value="0.5">180 градусов</option>
-                            <option value="1">360 градусов</option>
-                            <option value="0.75">270 градусов</option>
-                            <option value="0.25">90 градусов</option>
-                        </select>
-                        <b>Глубина тушения</b>
-                        <select name="glubina" id="glubina" style="width: 90%;">
-                            <option value="5">5 метров (ручной)</option>
-                            <option value="10">10 метров (лафет)</option>
-                        </select>
-                        <label for="radius"><b>R - радиус</b></label><br>
-                            <input type="number" id="radius" size="10" value="12">
-                        <form name="pozhar">
-                            <label for="s_pozhara"><b style="color: red;">Площадь пожара (м2).</b></label><br>
-                                <input name="s_pozhara" id="s_pozhara">          
-                            <label for="s_tush_f"><b style="color: red;">Тушение по фронту (м2).</b></label><br>
-                                <input name="s_tush_f" id="s_tush_f">          
-                            <label for="s_tush_p"><b style="color: red;">Тушение по периметру (м2).</b></label><br>
-                                <input name="s_tush_p" id="s_tush_p">          
-                        </form>
-
-                        <button class="btn btn-dark" id="b_3" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
-                    </div>
-                </div>                   
+                </div>                  
             </div>
         </div>
     </div>  
