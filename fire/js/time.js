@@ -104,6 +104,8 @@ function startTime()
             document.getElementById('previous').textContent = "Обслуживание ПТ, ПТВ, АСО.";
             document.getElementById('current').textContent = "Время приема пищи, ужин.";
             document.getElementById('next').textContent = "САМПО, изучение нормативных документов.";
+            let elem = document.querySelector("tr.t_22");
+            elem.className = "table-danger";
         }
         if ((timOut >=1930) && (timOut < 2030)) {
             document.getElementById('previous').textContent = "Время приема пищи, ужин.";
@@ -124,6 +126,8 @@ function startTime()
             document.getElementById('previous').textContent = "Вечерний туалет.";
             document.getElementById('current').textContent = "Несение караульной службы в ночное время.";
             document.getElementById('next').textContent = "Подъем.";
+            let elem = document.querySelector("tr.t_18");
+            elem.className = "table-danger";
         }
         if ((timOut >=600) && (timOut < 601)) {
             document.getElementById('previous').textContent = "Несение караульной службы в ночное время.";
@@ -155,6 +159,8 @@ function startTime()
             document.getElementById('current').textContent = "Подготовка к смене караулов.";
             document.getElementById('next').textContent = "Смена караулов.";
         }
+
+
 }
 
 function checkTime(i)

@@ -63,9 +63,7 @@ body {
     padding: 5px;
     width: 100%;
 }
-.tab {
-    border: 1px solid;
-}
+
 #grafik {
     display: block;
     margin-left: auto;
@@ -73,4 +71,7 @@ body {
     margin-bottom: 20px;   
     width: 90%;
     box-shadow: 5px 5px 15px black;
+}
+.prim {
+    color: red;
 }
