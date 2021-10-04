@@ -1,4 +1,6 @@
 function taktika(){
+//---------------------------------------------------------------------------------------------------------------
+//Время работы стволовот АЦ или откр. водоисточника.  
     document.querySelector('#b_1').addEventListener('click', ()=>{
         let v_cis = document.querySelector('#v_cis').value;
         let v_otk = document.querySelector('#v_otk').value;
@@ -18,7 +20,7 @@ function taktika(){
             }
         })
 //---------------------------------------------------------------------------------------------------------------
-
+//Время работы ГПС-600 от АЦ или откр. водоисточника.
     document.querySelector('#b_2').addEventListener('click', ()=>{
         let v_po = document.querySelector('#v_po').value;
         let v_cis_po = document.querySelector('#v_cis_po').value;
@@ -59,7 +61,7 @@ function taktika(){
         })
 
 //---------------------------------------------------------------------------------------------------------------
-
+// Форма пожара
     document.querySelector('#b_3').addEventListener('click', ()=>{
         let forma = document.querySelector('#forma').value;
         console.log(forma);
@@ -90,5 +92,22 @@ function taktika(){
             document.pozhar.s_tush_f.value = s_tush_f.toFixed(2); 
             document.pozhar.s_tush_p.value = s_tush_p.toFixed(2);        
         }
+        })
+
+//---------------------------------------------------------------------------------------------------------------
+// Время свободногораспространения пожара
+    document.querySelector('#b_4').addEventListener('click', ()=>{
+        let t_sbora = document.querySelector('#t_sbora').value;
+        console.log(t_sbora);
+        let t_soobcheniya = document.querySelector('#t_soobcheniya').value;
+        let t_razvert = document.querySelector('#t_razvert').value;
+        let v_sledovaniya = document.querySelector('#v_sledovaniya').value;
+        let t_svoboda_out = Number(t_sbora)+Number(t_soobcheniya)+Number(t_razvert)+Number(v_sledovaniya);
+        if (v_sledovaniya) {
+            document.svoboda.t_svoboda.value = Number(t_svoboda_out.toFixed(2)); 
+        } else {
+            alert("Какое Время следования!!!")
+        }
+
         })
 }

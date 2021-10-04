@@ -1,63 +1,58 @@
-@font-face {
-    font-family: Roboto-Light;
-    src: url(../fonts/Roboto/Roboto-Light.ttf);
-}
-
-@font-face {
-    font-family: Roboto-Bold;
-    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+body {
+   font-family: 'Hind Siliguri', sans-serif;
+   min-width: 320px;
 }
 @media screen and (min-width: 567px) { 
     #timer {
         font-size: 220px;
         text-align: center;
-        font-family: Roboto-Bold;
         text-shadow: 5px 5px 5px black;
+        font-weight: 600;
     }
     #previous, #next {
         font-size: 35px;
         text-align: center;
-        font-family: Roboto-Light;
+        font-weight: 500;
     }
     #current {
         font-size: 50px;
         text-align: center;
-        font-family: Roboto-Light;
+        font-weight: 600;
     }
     #rasporyadok {
         text-align: center;
         margin: 200px auto 0 auto;
         width: 50%;
+        font-weight: 500;
     }
 
 }
-@media screen and (max-width: 567px) { 
+@media screen and (max-width: 768px) { 
     #timer {
-        margin-top: 200px;
+        margin-top: 150px;
         font-size: 75px;
         text-align: center;
-        font-family: Roboto-Bold;
         text-shadow: 2px 2px 2px black;
+        font-weight: 600;
     }
     #previous, #next {
         font-size: 15px;
         text-align: center;
+        font-weight: 500;
     }
     #current {
         font-size: 30px;
         text-align: center;
+        font-weight: 600;
     }
     #rasporyadok {
         text-align: center;
         margin: 250px auto 0 auto;
         width: 95%;
+        font-weight: 500;
     }
 }
 
-body {
-    min-width: 320px;
-    font-family: Roboto-Light;
-}
 #previous {
     color: green;
 }
@@ -66,12 +61,10 @@ body {
 }
 .header {
     padding: 5px;
-    font-family: Roboto-Light;
     width: 100%;
 }
 .tab {
     border: 1px solid;
-    font-family: Roboto-Light;
 }
 #grafik {
     display: block;

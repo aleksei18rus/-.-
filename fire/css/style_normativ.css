@@ -1,16 +1,9 @@
-@font-face {
-    font-family: Roboto-Light;
-    src: url(/fonts/Roboto/Roboto-Light.ttf);
-}
-@font-face {
-    font-family: digital;
-    src: url(../fonts/digital-7\ \(italic\).ttf);
-}
+
 body {
     background-image: url(../img/psp.jpg);
     background-size: cover;
     background-attachment: fixed;
-    font-family: Roboto-Light;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 .secundomer {
     text-align: center;
@@ -20,7 +13,6 @@ body {
     margin-right: auto;
 }
 .header {
-    font-family: Roboto-Light;
     width: 100%;
 }
 .btn_secund {
@@ -32,7 +24,6 @@ body {
     background-color: blanchedalmond;
 }
 .window {
-    font-family: Roboto-Light;
     font-size: 50px;
     border: 3px solid;
     margin-top: 10px;

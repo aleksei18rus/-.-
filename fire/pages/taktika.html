@@ -53,16 +53,6 @@
         <div class="row">
             <div class="col-sm-12 col-md-3 col-xl-3">
                 <div class="input">
-                    <!--input type="checkbox" id="time_rab">
-                        <label for="time_rab" ><b>Время работы стволов от АЦ</b></label></br>
-                    <input type="checkbox" class="usloviya" id="usloviya" style="margin-top: 10px; margin-left: 20px;">
-                        <label for="usloviya"><b>Сложные условия.</b></label><br> 
-                    <input type="time" class="time_1">     
-                    <b>Время включения</b></br>
-                    <input type="time" class="time_2">
-                    <b>Время у очага</b></br>
-                    <input type="time" class="time_3"> 
-                    <b>Фактическое Твых. из НДС</b></br-->
                     <div class="v_rab_ac">
                         <p><b>Время работы стволовот АЦ<br> или откр. водоисточника.</b></p>
                         
@@ -115,6 +105,35 @@
                                 <input name="out_gps" id="out_v_gps">          
                         </form>
                         <button class="btn btn-dark" id="b_2" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
+                    </div>
+                </div>                   
+            </div>
+            <div class="col-sm-12 col-md-3 col-xl-3">
+                <div class="input">
+                    <div class="v_rab_ac">
+                        <p><b>Время свободного распространения пожара</b></p>
+                        <label for="t_sbora"><b>Время сбора л/с <br>(норматив 1 мин)*</b></label><br>
+                            <input type="number" id="t_sbora" size="10" value="1"><br>
+                            <b>Время до сообщения<br> о пожаре равно времени<br> от начала 
+                            возникновения<br> до сообщения о нём в ПЧ</b>
+                            <select name="t_soobcheniya" id="t_soobcheniya" style="width: 90%;">
+                                <option value="5">5 минут (наличие АПС)</option>
+                                <option value="10">10 минут (отсутствие АПС)</option>
+                            </select><br>
+                            <b>Время развертывания</b>
+                                <select name="t_razvert" id="t_razvert" style="width: 90%;">
+                                    <option value="3">3 минут (летнее время)</option>
+                                    <option value="7">7 минут (зимнее время)</option>
+                                    <option value="6">6 минут</option>
+                                    <option value="8">8 минут</option>
+                                </select><br>
+                        <label for="v_sledovaniya"><b>Время следования. (мин.)</b></label><br>
+                            <input type="number" id="v_sledovaniya" size="10" value="" min="1" placeholder="Введите время">
+                        <form name="svoboda">
+                            <label for="t_svoboda"><b style="color: red;">Результат (мин).</b></label><br>
+                                <input name="t_svoboda" id="t_svoboda">          
+                        </form>
+                        <button class="btn btn-dark" id="b_4" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
                     </div>
                 </div>                   
             </div>
