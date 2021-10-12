@@ -209,18 +209,6 @@ function gdzs() {
     })
 
     document.querySelector('#b_2').addEventListener('click', ()=>{
-        var clear = '';
-        document.getElementById('time_on').textContent = clear;
-        document.getElementById('p_min_on').textContent = clear;
-        document.getElementById('p_min_och').textContent = clear;
-        document.getElementById('p_zatrata').textContent = clear;
-        document.getElementById('p_kon_out').textContent = clear;
-        document.getElementById('rab').textContent = clear;
-        document.getElementById('temp').textContent = clear;
-        document.getElementById('time_ozhid').textContent = clear;
-        document.getElementById('voz_t').textContent = clear;
-        document.getElementById('delta_t').textContent = clear;
-        document.getElementById('fact').textContent = clear;
-        document.getElementById('fact_p').textContent = clear;
+        location.reload();
     })
 }

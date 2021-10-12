@@ -59,10 +59,53 @@ function taktika(){
             document.out_gps.out_v_gps.value = t_rab_gps.toFixed(1);
         }
         })
+    
+//---------------------------------------------------------------------------------------------------------------
+// Время следования
+    document.querySelector('#b_3').addEventListener('click', ()=>{
+        let rasstoyanie = document.querySelector('#rasstoyanie').value;
+        let skorost = document.querySelector('#skorost').value;
+        let sled = (Number(rasstoyanie)*60)/Number(skorost);
+        document.sledovanie.sledovanie.value = Number(sled.toFixed(2)); 
+        })
 
 //---------------------------------------------------------------------------------------------------------------
+// Время свободногораспространения пожара
+    document.querySelector('#b_4').addEventListener('click', ()=>{
+        let t_sbora = document.querySelector('#t_sbora').value;
+        console.log(t_sbora);
+        let t_soobcheniya = document.querySelector('#t_soobcheniya').value;
+        let t_razvert = document.querySelector('#t_razvert').value;
+        let v_sledovaniya = document.querySelector('#v_sledovaniya').value;
+        let t_svoboda_out = Number(t_sbora)+Number(t_soobcheniya)+Number(t_razvert)+Number(v_sledovaniya);
+        if (v_sledovaniya) {
+            document.svoboda.t_svoboda.value = Number(t_svoboda_out.toFixed(2)); 
+        } else {
+            alert("Какое Время следования!!!")
+        }
+
+        })
+
+        //---------------------------------------------------------------------------------------------------------------
+// Путь пройденный огнём
+document.querySelector('#b_5').addEventListener('click', ()=>{
+    let liniya = document.querySelector('#liniya').value;
+    let razvitie_pozh = document.querySelector('#razvitie_pozh').value;
+    let do_10 = (0.5*liniya)*razvitie_pozh;
+    let bolee_10 = liniya*(razvitie_pozh-5);
+    if (razvitie_pozh<=10) {
+        document.r_pro.do_10.value = do_10.toFixed(2); 
+        document.r_pro.bolee_10.value = "нет результата"; 
+    } else {
+        document.r_pro.do_10.value = "нет результата"; 
+        document.r_pro.bolee_10.value = bolee_10.toFixed(2); 
+    }
+       
+    })
+    
+//---------------------------------------------------------------------------------------------------------------
 // Форма пожара
-    document.querySelector('#b_3').addEventListener('click', ()=>{
+    document.querySelector('#b_6').addEventListener('click', ()=>{
         let forma = document.querySelector('#forma').value;
         console.log(forma);
         let glubina = document.querySelector('#glubina').value;
@@ -94,20 +137,4 @@ function taktika(){
         }
         })
 
-//---------------------------------------------------------------------------------------------------------------
-// Время свободногораспространения пожара
-    document.querySelector('#b_4').addEventListener('click', ()=>{
-        let t_sbora = document.querySelector('#t_sbora').value;
-        console.log(t_sbora);
-        let t_soobcheniya = document.querySelector('#t_soobcheniya').value;
-        let t_razvert = document.querySelector('#t_razvert').value;
-        let v_sledovaniya = document.querySelector('#v_sledovaniya').value;
-        let t_svoboda_out = Number(t_sbora)+Number(t_soobcheniya)+Number(t_razvert)+Number(v_sledovaniya);
-        if (v_sledovaniya) {
-            document.svoboda.t_svoboda.value = Number(t_svoboda_out.toFixed(2)); 
-        } else {
-            alert("Какое Время следования!!!")
-        }
-
-        })
 }

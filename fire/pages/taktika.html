@@ -130,6 +130,31 @@
                 </div>                   
             </div>
             <div class="col-sm-12 col-md-3 col-xl-3">
+                <div class="card-body">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#sledovanie" 
+                        aria-expanded="false" aria-controls="sledovanie" style="border-radius: 10px; width: 100%;">
+                            <h5 class="card-title">Время следования <br> пожарной машины</h5>
+                        </button><br>
+                    <div class="collapse" id="sledovanie">                                    
+                        <div class="input">
+                            <div class="v_rab_ac">
+                                <p><b>Время следования</b></p>
+                                <label for="rasstoyanie"><b>Расстояние от ПЧ <br> до места вызова (км.)</b></label><br>
+                                    <input type="number" id="rasstoyanie" size="20" placeholder="км.">
+                                <label for="skorost"><b>Средняя скорость ПМ.</b></label><br>
+                                    <input type="number" id="skorost" size="10" value="45">
+                                <form name="sledovanie">
+                                    <label for="sledovanie"><b style="color: red;">Время следования (мин).</b></label><br>
+                                        <input name="sledovanie" id="sledovanie">                   
+                                </form>
+        
+                                <button class="btn btn-dark" id="b_3" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
+                            </div>
+                        </div>                                   
+                    </div>
+                </div>                  
+            </div>
+            <div class="col-sm-12 col-md-3 col-xl-3">
                 <div class="card-body">   
                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#sbor" 
                     aria-expanded="false" aria-controls="sbor" style="border-radius: 10px; width: 100%;">
@@ -168,6 +193,33 @@
             </div>
             <div class="col-sm-12 col-md-3 col-xl-3">
                 <div class="card-body">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#dlina_puti" 
+                        aria-expanded="false" aria-controls="dlina_puti" style="border-radius: 10px; width: 100%;">
+                            <h5 class="card-title">Длина пути, <br> пройденная огнём.</h5>
+                        </button><br>
+                    <div class="collapse" id="dlina_puti">                                    
+                        <div class="input">
+                            <div class="v_rab_ac">
+                                <p><b>Путь пройденный огнём.</b></p>
+                                <label for="liniya"><b>Линейная скорость <br> (м/мин)</b></label><br>
+                                    <input type="number" id="liniya" size="10" placeholder="Введите значение в мин.">
+                                <label for="razvitie_pozh"><b>Время свободного развития пожара (мин.)</b></label><br>
+                                    <input type="number" id="razvitie_pozh" size="10" placeholder="Введите значение в мин.">
+                                <form name="r_pro">
+                                    <label for="do_10"><b style="color: red;">До 10 минут (м.)</b></label><br>
+                                        <input name="do_10" id="do_10">          
+                                    <label for="bolee_10"><b style="color: red;">Более 10 минут (м.)</b></label><br>
+                                        <input name="bolee_10" id="bolee_10">                   
+                                </form>
+        
+                                <button class="btn btn-dark" id="b_5" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
+                            </div>
+                        </div>                                   
+                    </div>
+                </div>                  
+            </div>
+            <div class="col-sm-12 col-md-3 col-xl-3">
+                <div class="card-body">
                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#form" 
                         aria-expanded="false" aria-controls="form" style="border-radius: 10px; width: 100%;">
                             <h5 class="card-title">Форма пожара<br> 90, 180, 270, 360 градусов.</h5>
@@ -199,7 +251,7 @@
                                         <input name="s_tush_p" id="s_tush_p">          
                                 </form>
         
-                                <button class="btn btn-dark" id="b_3" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
+                                <button class="btn btn-dark" id="b_6" style="margin-top: 10px; width: 100%;"><b>Расчитать</b></button></br>
                             </div>
                         </div>                                   
                     </div>
