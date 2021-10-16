@@ -2,6 +2,13 @@
     .welcome img {
         display: none;
     }
+    .welc_2 {
+        text-align: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 27px;
+    }
     .card-tv, .card-notebook, .card-ps, .card-fone, .card-inst {
         display: block;
         text-align: center;
@@ -16,6 +23,15 @@
         margin-right: auto;
     }
   }
+  @media (min-width: 766px){
+    .welc_2 {
+        text-align: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 27px;
+    }
+  }
 body {
     /*background-image: url(/img/welcome.jpg);
     background-size: cover;
@@ -25,6 +41,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .navbar {
     background-color:#FFFFFF;
     color: black;
@@ -45,13 +62,7 @@ body {
     line-height: 73px;
     text-shadow: 1px 1px 1px black;
 }
-.welc_2 {
-    text-align: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 27px;
-}
+
 .brands {
     display: block;
     margin-left: auto;
@@ -63,6 +74,7 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+    text-align: left;
 }
 .footers, a {
     font-weight: 500;
