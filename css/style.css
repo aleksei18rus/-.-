@@ -1,90 +1,101 @@
 @media (max-width: 767px) {
-    .welcome img {
-        display: none;
-    }
-    .welc_2 {
-        text-align: center;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 27px;
-    }
-    .card-tv, .card-notebook, .card-ps, .card-fone, .card-inst {
-        display: block;
-        text-align: center;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .row, img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .welcome img {
+    display: none;
   }
-  @media (min-width: 766px){
-    .welc_2 {
-        text-align: center;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 27px;
-    }
-  }
-body {
-    /*background-image: url(/img/welcome.jpg);
-    background-size: cover;
-    background-attachment: fixed;*/
-    max-width: 1600px;
-    font-family: 'Hind Siliguri', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.navbar {
-    background-color:#FFFFFF;
-    color: black;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 23px;
-    height: 80px;
-}
-.navbar-brand {
-    font-weight: 600;
-}
-
-.welc {
-    margin-top: 128px;
+  .welc_2 {
     text-align: center;
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 73px;
-    text-shadow: 1px 1px 1px black;
-}
-
-.brands {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 27px;
+  }
+  .card-tv,
+  .card-notebook,
+  .card-ps,
+  .card-fone,
+  .card-inst {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.card-tv, .card-notebook, .card-ps, .card-fone, .card-inst {
-    display: block;
+    text-align: center;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    text-align: left;
+  }
+  .row,
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-.footers, a {
-    font-weight: 500;
-    text-decoration: none;
+@media (min-width: 766px) {
+  .welc_2 {
     text-align: center;
-    color: black;
-    padding: 3%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+  }
 }
-.map, .comments{
-    text-align: center;
-    font-size: 30px;
-    padding: 20px;
+body {
+  /*background-image: url(/img/welcome.jpg);
+    background-size: cover;
+    background-attachment: fixed;*/
+  max-width: 1600px;
+  font-family: "Hind Siliguri", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  background-color: #ffffff;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  height: 80px;
+}
+.navbar-brand {
+  font-weight: 600;
+}
+
+.welc {
+  margin-top: 128px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 73px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.brands {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-tv,
+.card-notebook,
+.card-ps,
+.card-fone,
+.card-inst {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+}
+.footers,
+a {
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 3%;
+}
+.map,
+.comments {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
 }

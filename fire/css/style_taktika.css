@@ -1,14 +1,16 @@
 .v_rab_ac {
-    margin: 10px auto 10px auto;
-    width: 90%;
-    display: block;
-    border: 2px solid;
-    padding: 5px;
-    text-align: center;
-    box-shadow: 5px 5px 10px black;
+  margin: 10px auto 10px auto;
+  width: 90%;
+  display: block;
+  border: 2px solid;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 5px 5px 10px black;
 }
-input, label, .v_rab_ac {
-    width: 90%;
-    font-style: italic;
-    background-color: white;
+input,
+label,
+.v_rab_ac {
+  width: 90%;
+  font-style: italic;
+  background-color: white;
 }

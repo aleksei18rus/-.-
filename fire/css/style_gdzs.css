@@ -1,39 +1,43 @@
 @media screen and (min-width: 567px) {
-    .tablica {
-        width: 100%;
-        margin-top: 5px;
-    }
-    .btn {
-        display: block;
-        width: 70%;
-        text-align: center;
-    }
+  .tablica {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .btn {
+    display: block;
+    width: 70%;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 567px) {
-    .tablica {
-        width: 100%;
-        display: block;
-        margin: 10px auto 0 auto;
-    }
-    .btn {
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
+  .tablica {
+    width: 100%;
+    display: block;
+    margin: 10px auto 0 auto;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 body {
-    font-family: 'Hind Siliguri', sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
 }
 h1 {
-    margin-top: 16px;
-    text-align: center;
+  margin-top: 16px;
+  text-align: center;
 }
-.time_1, .time_2, .time_3, .p_min_on, .p_min_och {
-    width: 100px;
-    margin-left: 20px;
-    margin-top: 20px;   
+.time_1,
+.time_2,
+.time_3,
+.p_min_on,
+.p_min_och {
+  width: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .formul {
-    margin: 30px 0 0 0;
+  margin: 30px 0 0 0;
 }

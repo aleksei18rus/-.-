@@ -1,74 +1,75 @@
 body {
-   font-family: 'Hind Siliguri', sans-serif;
-   min-width: 320px;
+  font-family: "Hind Siliguri", sans-serif;
+  min-width: 320px;
 }
-@media screen and (min-width: 567px) { 
-    #timer {
-        font-size: 220px;
-        text-align: center;
-        text-shadow: 5px 5px 5px rgb(180, 3, 3);
-        font-weight: 600;
-    }
-    #previous, #next {
-        font-size: 35px;
-        text-align: center;
-        font-weight: 500;
-    }
-    #current {
-        font-size: 50px;
-        text-align: center;
-        font-weight: 600;
-    }
-    #rasporyadok {
-        text-align: center;
-        margin: 200px auto 0 auto;
-        width: 50%;
-        font-weight: 500;
-    }
-
+@media screen and (min-width: 567px) {
+  #timer {
+    font-size: 220px;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(180, 3, 3);
+    font-weight: 600;
+  }
+  #previous,
+  #next {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+  }
+  #current {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+  }
+  #rasporyadok {
+    text-align: center;
+    margin: 200px auto 0 auto;
+    width: 50%;
+    font-weight: 500;
+  }
 }
-@media screen and (max-width: 768px) { 
-    #timer {
-        margin-top: 220px;
-        font-size: 75px;
-        text-align: center;
-        text-shadow: 2px 2px 4px rgb(180, 3, 3);
-        font-weight: 600;
-    }
-    #previous, #next {
-        font-size: 15px;
-        text-align: center;
-        font-weight: 500;
-    }
-    #current {
-        font-size: 30px;
-        text-align: center;
-        font-weight: 600;
-    }
-    #rasporyadok {
-        text-align: center;
-        margin: 250px auto 0 auto;
-        width: 95%;
-        font-weight: 500;
-    }
+@media screen and (max-width: 768px) {
+  #timer {
+    margin-top: 220px;
+    font-size: 75px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(180, 3, 3);
+    font-weight: 600;
+  }
+  #previous,
+  #next {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+  }
+  #current {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+  }
+  #rasporyadok {
+    text-align: center;
+    margin: 250px auto 0 auto;
+    width: 95%;
+    font-weight: 500;
+  }
 }
 
 #previous {
-    color: green;
+  color: green;
 }
 #next {
-    color: red;
+  color: red;
 }
 .header {
-    padding: 5px;
-    width: 100%;
+  padding: 5px;
+  width: 100%;
 }
 
 #grafik {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    margin-bottom: 20px;   
-    width: 90%;
-    box-shadow: 5px 5px 15px black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 90%;
+  box-shadow: 5px 5px 15px black;
 }
