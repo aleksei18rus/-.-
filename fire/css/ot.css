@@ -3,7 +3,15 @@ body {
     min-width: 320px;
     font-weight: 400;
  }
-.table {
-    text-align: center;
-    font-size: 10px;
-}
+ @media screen and (min-width: 567px) {
+    .table {
+        text-align: center;
+        font-size: 20px;
+    }    
+ }
+ @media screen and (max-width: 768px) { 
+    .table {
+        text-align: center;
+        font-size: 10px;
+    } 
+ }
