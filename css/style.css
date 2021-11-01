@@ -1,7 +1,18 @@
 @keyframes slidein {
   from {
-    margin-bottom: 80%;
-    width: 200%;
+    margin-right: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes slidein_2 {
+  from {
+    margin-top: 100%;
+    width: 300%;
   }
 
   to {
@@ -14,6 +25,8 @@
     display: none;
   }
   .welc_2 {
+    animation-duration: 2s;
+    animation-name: slidein_2;
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -41,6 +54,8 @@
 }
 @media (min-width: 766px) {
   .welc_2 {
+    animation-duration: 2s;
+    animation-name: slidein_2;
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -49,9 +64,6 @@
   }
 }
 body {
-  /*background-image: url(/img/welcome.jpg);
-    background-size: cover;
-    background-attachment: fixed;*/
   max-width: 1600px;
   font-family: "Hind Siliguri", sans-serif;
   margin-left: auto;
@@ -71,7 +83,7 @@ body {
 }
 
 .welc {
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-name: slidein;
   margin-top: 128px;
   text-align: center;
