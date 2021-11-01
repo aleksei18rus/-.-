@@ -37,7 +37,17 @@ h1 {
   margin-left: 20px;
   margin-top: 20px;
 }
-
 .formul {
   margin: 30px 0 0 0;
 }
+.obyazannosti {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+.obyazannosti > p {
+  text-align: left;
+  padding: 25px;
+  margin-top: 20px;
+}
+
