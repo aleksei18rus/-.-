@@ -120,7 +120,21 @@ a {
 }
 .map,
 .comments {
+  display: block;
   text-align: center;
   font-size: 30px;
   padding: 20px;
+}
+.mailto {
+  margin-top: 5px;
+  display: block;
+  text-align: left;
+  padding: 15px;
+  font-size: 20px;
+}
+.mailto > span {
+  font-size: 30px;
+}
+label {
+  margin: 10px 0 10px 0;
 }
