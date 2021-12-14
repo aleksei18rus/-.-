@@ -116,7 +116,11 @@ a {
   text-decoration: none;
   text-align: center;
   color: black;
-  padding: 3%;
+  padding: 2%;
+}
+.footers > div > a {
+  display: block;
+  margin: 5px 0 5px 0;
 }
 .map,
 .comments {
