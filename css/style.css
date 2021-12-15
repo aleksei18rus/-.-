@@ -119,7 +119,7 @@ a {
   padding: 2%;
 }
 .footers > div > a {
-  display: block;
+  display: inline-block;
   margin: 5px 0 5px 0;
 }
 .map,
