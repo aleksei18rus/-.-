@@ -193,9 +193,9 @@
                     <b>Возраст</b></br>
                     <input type="number" class="ufr_css ves" placeholder="кг.">
                     <b>Вес</b></br>
-                    <input type="number" class="ufr_css p_1" placeholder="уд. мин.">
+                    <input type="number" class="ufr_css p_1" placeholder="уд. сек.">
                     <b>ЧСС первой нагрузки за 10 сек.</b></br>
-                    <input type="number" class="ufr_css p_2" placeholder="уд. мин.">
+                    <input type="number" class="ufr_css p_2" placeholder="уд. сек.">
                     <b>ЧСС второй нагрузки за 10 сек.</b></br>
                     <div class="btn">
                         <button class="btn btn-dark" id="b_3" style="margin-top: 10px;"><b>Расчитать</b></button>
@@ -218,6 +218,39 @@
                     <tr>
                         <th>Работоспособность</th>
                         <th id="rab_spo"></th>
+                    </tr>
+                </table>
+            </div>
+            <h1 style="margin-top: 50px;" id="ist" ><b>Методика оценки <br> уровня адаптации газодымозащитников к <br> физическим
+                нагрузкам в тепловой камере
+            </b></h1>
+            <div class="col-sm-12 col-md-5 col-xl-5">
+                <div class="input" style="margin: 50px 0 50px 0;">
+                    <input type="checkbox" class="rost" id="rost" style="margin-top: 10px; margin-left: 20px;">
+                    <label for="rost"><b> Рост менее 176 см.</b></label></br>
+                    <input type="number" class="ufr_css p_1" placeholder="уд. сек.">
+                    <b>ЧСС 2 минуты за 30 сек.</b></br>
+                    <input type="number" class="ufr_css p_2" placeholder="уд. сек.">
+                    <b>ЧСС 3 минуты за 30 сек.</b></br>
+                    <input type="number" class="ufr_css p_3" placeholder="уд. сек.">
+                    <b>ЧСС 4 минуты за 30 сек.</b></br>
+                    <div class="btn">
+                        <button class="btn btn-dark" id="b_4" style="margin-top: 10px;"><b>Расчитать</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-xl-5">
+                <table class="tablica table table-bordered table-light" style="text-align: center; margin-top: 60px;">
+                    <tr>
+                        <th colspan="2">Маятник метронома <span id="metronom">120</span> ударов в минуту.</th>
+                    </tr>
+                    <tr>
+                        <th style="width: 50%;">Индекс степ-теста</th>
+                        <th id="resultat_ist"></th>
+                    </tr>
+                    <tr>
+                        <th>Оценка</th>
+                        <th id="ocenka"></th>
                     </tr>
                 </table>
             </div>
