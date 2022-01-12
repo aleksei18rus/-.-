@@ -87,6 +87,9 @@ function gdzs() {
           document.getElementById("p_zatrata").textContent =
             Math.ceil(p_max_pad); // Р затрачено
           var p_kon_out = p_max_pad + p_max_pad + 10;
+          if (p_kon_out<50) {
+            p_kon_out = 50;
+          }
           document.getElementById("p_kon_out").textContent = p_kon_out;
           var t_rab_och = ((p_min_och - p_kon_out) * 6.8) / (kof_szh * 40);
         } else {
@@ -173,6 +176,9 @@ function gdzs() {
           document.getElementById("p_zatrata").textContent =
             Math.ceil(p_max_pad); // Р затрачено
           var p_kon_out = p_max_pad + p_max_pad / 2 + 10;
+          if (p_kon_out<50) {
+            p_kon_out = 50;
+          }
           document.getElementById("p_kon_out").textContent = p_kon_out;
           var t_rab_och = ((p_min_och - p_kon_out) * 6.8) / (kof_szh * 40);
         } else {
