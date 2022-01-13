@@ -411,5 +411,4 @@ document.querySelector("#b_4").addEventListener("click", () => {
     }
   }
 });
-
 }
