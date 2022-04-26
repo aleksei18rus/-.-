@@ -379,7 +379,7 @@ document.querySelector("#b_4").addEventListener("click", () => {
   var p_1 = document.querySelector(".p_1").value;
   var p_2 = document.querySelector(".p_2").value;
   var p_3 = document.querySelector(".p_3").value;
-  var resultat_ist = 500/((p_1 + p_2 + p_3)*2);
+  var resultat_ist = 30000/((p_1 + p_2 + p_3)*2);
   document.getElementById("resultat_ist").textContent = resultat_ist.toFixed(0);
   if (resultat_ist<55) {
     document.getElementById("ocenka").textContent = "Низкая";    
