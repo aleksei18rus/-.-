@@ -25,8 +25,8 @@
     display: none;
   }
   .welc_2 {
-    animation-duration: 2s;
-    animation-name: slidein_2;
+/*     animation-duration: 2s;
+    animation-name: slidein_2; */
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -54,8 +54,8 @@
 }
 @media (min-width: 766px) {
   .welc_2 {
-    animation-duration: 2s;
-    animation-name: slidein_2;
+/*     animation-duration: 2s;
+    animation-name: slidein_2; */
     text-align: center;
     font-style: normal;
     font-weight: normal;
@@ -83,8 +83,8 @@ body {
 }
 
 .welc {
-  animation-duration: 1s;
-  animation-name: slidein;
+/*   animation-duration: 1s;
+  animation-name: slidein; */
   margin-top: 128px;
   text-align: center;
   font-weight: 600;
