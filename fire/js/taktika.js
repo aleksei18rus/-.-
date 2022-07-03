@@ -56,11 +56,13 @@ function taktika() {
             let kof = v_cis_po / v_po;
             if (kof <= 15.7 && v_otk_po <= 0) {
                 console.log("Коэффициент: ", kof.toFixed(1), "<= 15.7");
+                console.log("Вода закончится раньше");
                 v_rastvora = v_cis_po / 15.7 + Number(v_cis_po);
                 console.log("Объем цистерны:", v_cis_po, "л.");
                 console.log("Объем раствора:", v_rastvora, "л.");
             } else {
                 console.log("Коэффициент: ", kof.toFixed(1), ">= 15.7");
+                console.log("Пена закончится раньше");
                 v_rastvora = (v_po * 15.7) - v_po;
                 console.log("Объем пенобака:", v_po, "л.");
                 console.log("Объем раствора:", v_rastvora, "л.");
